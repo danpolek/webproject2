@@ -1,58 +1,51 @@
-<!--Name: daniel aduayi
+<!-- 
+Name: Daniel Aduayi
 Course: PTEC
-Teacher: ms hoitink
+Teacher: Ms. Hoitink
 School: PTC
-Date Last Modified: day1
+Date Last Modified: Day 1 
 -->
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREATY 4</title>
+    <title>Treaty 4 - Understanding Our Shared History</title>
+    <link rel="stylesheet" href="styles.css">
+
     <style>
-        /* Style for the logo and image */
+        /* Header Styling */
         .header {
             display: flex;
-            align-items:center;
-            justify-content:center;
-            gap: 10px; /* space between logo and header */
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             background-color: #333;
+            padding: 10px;
         }
         
         .header img {
-            width: auto;
             height: 125px;
-            text-align:center;
-            background-color: #333;
         }
         
         h1 {
             text-align: center;
-            display: inline;
-            background-color: #333;
-            color: rgb(255, 255, 255);
+            color: white;
         }
 
-        
+        /* Navigation Bar */
         nav {
             background-color: #333;
-            overflow: hidden;
-            display: block;
-            margin: left auto;;
-            margin: right auto;;
-            width: 100%;
-
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
         }
 
         nav a {
-            float: 25px;;
-            display: block;
-            color: rgb(255, 255, 255);
+            color: white;
             text-align: center;
-            padding: 14px 14px;
-            text-decoration: solid;
+            padding: 14px 20px;
+            text-decoration: none;
         }
 
         nav a:hover {
@@ -60,31 +53,49 @@ Date Last Modified: day1
             color: black;
         }
 
-        #logo{
+        /* Logo Hover Effect */
+        #logo {
             transform: scale(1);
-            transition: step-start;
+            transition: transform 0.3s ease-in-out;
         }
 
-        #logo:hover{
+        #logo:hover {
             transform: scale(1.1);
-            transition: 1.0s;
         }
-        #h1{text-align: center;}
-        #text{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;text-align: center;}
-        #images{width: 400px; height: auto;text-align: center;}
-        footer{display: flex;
-            align-items:center;
-            justify-content:center;
-            gap: 10px; 
+
+        /* Text & Image Styling */
+        h2 {
+            text-align: center;
+        }
+
+        #text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: left;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        #images {
+            width: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
             background-color: #333;
-        color: white;}
+            color: white;
+            padding: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <img src="download (1).png" alt="logo of the webpage" id="logo">
-        <h1>Treaty 4 Understanding Our Shared History and Its Lasting Impact</h1>
+        <img src="download (1).png" alt="Logo of the webpage" id="logo">
+        <h1>Treaty 4 - Understanding Our Shared History and Its Lasting Impact</h1>
     </div>
     
     <!-- Navigation bar -->
@@ -94,12 +105,29 @@ Date Last Modified: day1
         <a href="#resources">Resources</a>
         <a href="#contact">Contact</a>
     </nav>
-    <!--https://fhqtc.com/t4gathering/    link for research-->
+
     <br>
-    <h2 id="h1" > <i><b>TREATY 4 GATHERING</b></i></h2>
-    <p id="text" class="#home" style="text-align: left;">Treaty4 was signed on september 15 1874  with prople from of British Queen Victoria joining with the cree  Assiniboine and Saulteaux peoples and This process took six days to complete.</p>
-    <div><img id="images" src="https://fhqtc.com/wp-content/uploads/2019/04/Treat4Logo-1024x593.jpg" alt="treaty 4 image"></div>
-    <p id="text" style="text-align: left;" >The flag has four sections that represent, not only the Treaty aspect, but also represents many aspects to community, life, and our roles. This has been adopted as an icon in Treaty 4 Territory for both Indigenous and non-Indigenous peoples. the treaty aspects represents the breadth of the promise, which can be seen in each section – For As Long As The Sun Shines, Grass Grows, Waters Flow which is vommonly said in treaty acknowledgements all over schools in winnipeg and manitoba</p>
-    <footer> <p id="footer" style="text-align: center;" > all rights reserved 2025 treaty 4 by daniel aduayi</p></footer>
+    <h2><i><b>TREATY 4 GATHERING</b></i></h2>
+
+    <p id="text">
+        Treaty 4 was signed on <strong>September 15, 1874</strong>, with people from British Queen Victoria joining with the Cree, Assiniboine, and Saulteaux peoples. 
+        This process took six days to complete.
+    </p>
+
+    <div>
+        <img id="images" src="https://fhqtc.com/wp-content/uploads/2019/04/Treat4Logo-1024x593.jpg" alt="Treaty 4 flag image">
+    </div>
+
+    <p id="text">
+        The flag has four sections that represent not only the Treaty aspect but also many aspects of community, life, and roles. 
+        This has been adopted as an icon in Treaty 4 Territory for both Indigenous and non-Indigenous peoples. 
+        The Treaty aspect represents the breadth of the promise, which can be seen in each section – 
+        <strong>"For As Long As The Sun Shines, Grass Grows, and Waters Flow"</strong>, which is commonly said in Treaty acknowledgments in schools across Winnipeg and Manitoba.
+    </p>
+
+    <footer>
+        <p>All rights reserved &copy; 2025 | Treaty 4 | By Daniel Aduayi</p>
+    </footer>
 </body>
 </html>
+
