@@ -139,13 +139,43 @@ iframe {
     line-height: 1.6;
 }
 
+.location-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.text {
+    flex: 1;
+}
+
+.image img {
+    width: 300px; 
+    height: auto;
+    border-radius: 10px;
+}
+.image-container {
+    text-align: center; 
+    margin: 20px 0;
+}
+
+#treaty4-map {
+    width: 300px; 
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
 
     </style>
 </head>
 
 <body>
     <div class="header">
-        <img id="logo" src="https://www.rcsd.ca/images/320a024d-6de0-4792-8db4-b054d03e5377" alt="Treaty 4 Logo">
+        <img id="logo" src="download.png" alt="Treaty 4 Logo">
         <h1>Treaty 4 - Understanding Our Shared History and Its Lasting Impact</h1>
     </div>
     
@@ -185,8 +215,8 @@ iframe {
                 <div class="iframe-container">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5047.883600787242!2d-103.79480285436912!3d50.75811282364248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531dc238253420fd%3A0x12cd302bfb5bcf4f!2sTreaty%20Four%20Reserve%20Grounds%20I.r.%20No.%2077%2C%20Fort%20Qu&#39;Appelle%2C%20SK!5e0!3m2!1sen!2sca!4v1742158396855!5m2!1sen!2sca" 
-                        width="80%" 
-                        height="400" 
+                        width="50px" 
+                        height="250px" 
                         style="border:0; display:block;" 
                         allowfullscreen="" 
                         loading="lazy" 
@@ -210,11 +240,21 @@ iframe {
     <li>A small section of <strong>Alberta</strong></li>
 </ul>
 
+
 <h3>First Nations in Treaty 4 Territory</h3>
+
+
+<div class="image-container">
+    <img id="treaty4-map" src="https://indigenousreflections.ca/cdn/shop/files/TRE-11copy_800x.jpg?v=1719503009" alt="Treaty 4 Map">
+</div>
+
 <p id="text">
     Treaty 4 includes <strong>35 First Nations</strong> from the Cree, Saulteaux (Ojibwe), and Assiniboine peoples. 
     Some of these nations are:
 </p>
+
+
+
 <ul id="text">
     <li>Cowessess First Nation</li>
     <li>Piapot First Nation</li>
@@ -223,21 +263,29 @@ iframe {
     <li>Kahkewistahaw First Nation</li>
 </ul>
 <div class="treaty-info">
-	<h2>Treaty 4 Location and Coverage</h2>
 
-
-<h3>Why is the Location Important?</h3>
-<p class="highlights">Treaty 4 covers a large area of southern Saskatchewan.</p>
-
-<p id="text">
-	
-    The lands within Treaty 4 were originally home to Indigenous peoples who lived off the land, 
-    relying on the natural environment for food, shelter, and trade. The signing of the treaty changed 
-    how land was used and led to the creation of reserves. Today, many communities in this area continue 
-    to honor Treaty 4 through education, cultural events, and land acknowledgments.
-</p>
-<a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-4" target="_blank">The Canadian Encyclopedia - Treaty 4</a>
-
+    <div class="treaty-info">
+        <h2>Treaty 4 Location and Coverage</h2>
+    
+        <div class="location-container">
+            <div class="text">
+                <h3>Why is the Location Important?</h3>
+                <p class="highlights">Treaty 4 covers a large area of southern Saskatchewan.</p>
+                <p id="text">
+                    The lands within Treaty 4 were originally home to Indigenous peoples who lived off the land, 
+                    relying on the natural environment for food, shelter, and trade. The signing of the treaty changed 
+                    how land was used and led to the creation of reserves. Today, many communities in this area continue 
+                    to honor Treaty 4 through education, cultural events, and land acknowledgments.
+                </p>
+                <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-4" target="_blank">The Canadian Encyclopedia - Treaty 4</a>
+            </div>
+            
+            <div class="image">
+                <img src="https://i.cbc.ca/1.7316309.1725663984!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_1180/treaty-four-gathering-2023.jpg?im=Resize%3D780" alt="Treaty 4 Map">
+            </div>
+        </div>
+    </div>
+    
 <h3>How Treaty 4 Affects People Today</h3>
 <p class="treaty-text">
     Treaty 4 continues to play a major role in shaping Indigenous and non-Indigenous relations in Canada. 
