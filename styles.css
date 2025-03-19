@@ -125,32 +125,3 @@ iframe {
     margin: 20px;
     line-height: 1.6;
 }
-
-.location-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; 
-}
-
-.text {
-    flex: 1;
-}
-
-.image img {
-    width: 200px; 
-    height: auto;
-    border-radius: 10px;
-}
-.image-container {
-    text-align: center; 
-    margin: 20px 0;
-}
-
-#treaty4-map {
-    width: 200px; 
-    height: 300px;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0 auto;
-}
