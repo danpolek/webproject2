@@ -93,7 +93,7 @@ footer {
             width: auto;
             height: 20px;
 }
-.highlights {
+.highlights { <!-- highlight basically just highlights the treaty location text -->
     background-color: #f0e68c;
     padding: 10px;
     font-weight: bold;
