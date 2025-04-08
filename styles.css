@@ -92,11 +92,11 @@ footer {
             padding: 20px;
             width: auto;
             height: 20px;
-}
-.highlights { <!-- highlight basically just highlights the treaty location text -->
+ }   /* highlight basically just highlights the treaty location text */
+.highlights { 
     background-color: #f0e68c;
-    padding: 10px;
-    font-weight: bold;
+    padding:10px;
+    font-weight:bold;
 }
 .treaty-info {
     background-color: #ffffff;
