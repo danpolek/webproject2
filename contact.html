@@ -16,11 +16,11 @@
             background-color: #333;
             padding: 10px;
         }
-        
+
         .header img {
             height: 125px;
         }
-        
+
         h1 {
             text-align: center;
             color: white;
@@ -59,7 +59,8 @@
             font-weight: bold;
         }
 
-        .contact-form input, .contact-form textarea {
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
@@ -91,45 +92,64 @@
         }
 
         .highlights {
-    background-color: #f0e68c;
-    padding: 10px;
-    font-weight: bold;
-}
-
+            background-color: #f0e68c;
+            padding: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <img src="download.png" alt="Logo of the webpage">
+    <!-- Header with logo and title -->
+    <header class="header" role="banner">
+        <img src="download.png" alt="Treaty 4 logo showing unity between Indigenous nations and the Crown">
         <h1>Contact Us - Treaty 4</h1>
-    </div>
-    
+    </header>
+
     <!-- Navigation bar -->
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" aria-current="page">Contact</a>
     </nav>
-    
-    <h2 style="text-align:center;">Get in Touch</h2>
-    <form class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <!-- Main content area -->
+    <main role="main">
+        <h2 style="text-align:center;">Get in Touch</h2>
+        <form class="contact-form" aria-labelledby="contact-form-heading">
+            <fieldset>
+                <legend id="contact-form-heading">Contact Form</legend>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" aria-required="true" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" aria-required="true" required>
+        
+                <label for="source">How did you learn about Treaty 4?</label>
+                <select id="source" name="source" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="school">School</option>
+                    <option value="family">Family or Friends</option>
+                    <option value="online">Online / Social Media</option>
+                    <option value="event">Treaty 4 Gathering or Event</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" aria-required="true" required></textarea>
+        
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+        
+        </form>
+    </main>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <p>All rights reserved 2025 | Treaty 4 | By Daniel Aduayi</p>
     </footer>
 </body>
 </html>
-
