@@ -104,7 +104,7 @@ footer {
     color: #000000; /* Black text */
     font-size: 14px; /* Small text */
     border-radius: 25px; /* Rounded edges */
-            background-color: #d2b48c;/* light background */
+            background-color: #d2b48c;/* darkish background */
     padding: 20px; /* Inner space */
     height: auto; /* Automatic height */
     margin-top: 30px; /* Space above */
@@ -121,7 +121,7 @@ footer {
 
 /* Style info boxes */
 .treaty-info {
-    background-color: #ffffff; /* White background */
+     background-color: #d2b48c; /* White background */
     padding: 10px 20px; /* Padding inside */
     border-radius: 15px; /* Rounded corners */
     margin: 20px; /* Space around */
