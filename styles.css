@@ -1,147 +1,154 @@
-/* Set the overall font and background color of the website */
+/* ====== GLOBAL BODY STYLING ====== */
+/* Imports a clean, modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Sets the base font, background color, and text color for the site */
 body {
-    font-family: Arial, sans-serif; /* Applies a clean sans-serif font to the body text */
-    background-color: #08b2fc;      /* Sets the background color of the webpage to a bright blue */
+    font-family: 'Quicksand', sans-serif; /* Friendly font for kids and teens */
+    background-color: #08b2fc;            /* Bright blue background */
+    color: #1a1a1a;                        /* Nearly black text for contrast */
+    margin: 0;                             /* Removes default body margin */
+    padding: 0;                            /* Removes default padding */
 }
 
-/* ========== HEADER STYLING ========== */
+/* ====== HEADER STYLING ====== */
+/* Styles the top header section that includes the logo and title */
 .header {
-    display: flex;                 /* Uses flexbox layout for header content */
-    align-items: center;          /* Vertically centers items inside the header */
-    justify-content: center;      /* Horizontally centers items inside the header */
-    gap: 10px;                    /* Adds spacing between items inside the header */
-    background-color: #ffffff;    /* Sets header background to white */
-    border-radius: 25px;          /* Rounds the corners of the header */
-    padding: 20px;                /* Adds space inside the header */
-    width: auto;                  /* Allows width to adjust automatically */
-    height: auto;                 /* Allows height to adjust automatically */
+    display: flex;                 /* Uses flexbox for layout */
+    align-items: center;          /* Vertically centers items */
+    justify-content: center;      /* Horizontally centers items */
+    gap: 10px;                    /* Adds space between items */
+    background-color: #ffffff;    /* White background */
+    border-radius: 25px;          /* Rounded corners */
+    padding: 20px;                /* Inner space */
 }
 
-/* Logo image inside the header */
+/* Sets the size of the logo image */
 .header img {
-    height: 125px; /* Sets the logo height to 125 pixels */
+    height: 125px; /* Logo height */
 }
 
-/* Main page title styling */
+/* Styles the main title of the page */
 h1 {
-    text-align: center;        /* Centers the h1 title horizontally */
-    color: rgb(0, 0, 0);       /* Sets text color to black */
+    text-align: center;   /* Centered text */
+    color: #000000;       /* Black color */
+    font-size: 2.5em;     /* Large size */
 }
 
-/* ========== NAVIGATION BAR STYLING ========== */
+/* ====== NAVIGATION BAR ====== */
+/* Styles the navigation bar container */
 nav {
-    background-color: #ffffff; /* Sets navbar background to white */
-    display: flex;             /* Uses flexbox layout for navbar */
-    justify-content: center;   /* Horizontally centers navigation links */
-    align-items: center;       /* Vertically centers navigation links */
-    flex-wrap: wrap;           /* Allows nav items to wrap on smaller screens */
-    border-radius: 25px;       /* Rounds the corners of the navbar */
-    padding: 20px;             /* Adds padding inside the navbar */
-    width: fit-content;        /* Makes the navbar only as wide as its content */
-    margin: 0 auto;            /* Centers the navbar horizontally in the page */
+    background-color: #ffffff; /* White background for nav */
+    display: flex;             /* Flexbox for layout */
+    justify-content: center;   /* Center nav items */
+    align-items: center;       /* Vertically center items */
+    flex-wrap: wrap;           /* Wrap nav items on small screens */
+    border-radius: 25px;       /* Rounded corners */
+    padding: 20px;             /* Inner space */
+    width: fit-content;        /* Shrinks to fit links */
+    margin: 20px auto;         /* Centers nav in the page */
 }
 
-/* Navigation links inside the navbar */
+/* Styles each nav link */
 nav a {
-    color: rgb(0, 0, 0);           /* Sets the link text color to black */
-    text-align: center;           /* Centers link text */
-    padding: 14px 20px;           /* Adds space around the links */
-    text-decoration: none;        /* Removes underline from links */
-    display: inline-block;        /* Makes the links behave like buttons */
+    color: #1a1a1a;            /* Blackish text */
+    text-align: center;        /* Center text inside link */
+    padding: 14px 20px;        /* Space around link */
+    text-decoration: none;     /* Removes underline */
+    font-weight: bold;         /* Makes text bold */
+    transition: all 0.2s ease-in-out; /* Smooth hover */
 }
 
-/* Hover effect for navigation links */
+/* Hover effect for nav links */
 nav a:hover {
-    background-color: #ddd;       /* Light gray background when hovering */
-    color: black;                 /* Text color stays black on hover */
+    background-color: #f0e68c; /* Light yellow on hover */
+    color: #000000;            /* Stays black on hover */
+    border-radius: 10px;       /* Rounded on hover */
 }
 
-/* ========== LOGO HOVER EFFECT ========== */
+/* ====== LOGO HOVER EFFECT ====== */
+/* Default logo state */
 #logo {
-    transform: scale(1);                      /* Normal size by default */
-    transition: transform 0.3s ease-in-out;   /* Smooth transition when scaling */
+    transform: scale(1);                      /* Normal size */
+    transition: transform 0.3s ease-in-out;   /* Smooth animation */
 }
 
+/* Grows logo slightly on hover */
 #logo:hover {
-    transform: scale(1.1);                    /* Scales logo slightly larger on hover */
+    transform: scale(1.1);
 }
 
-/* ========== HEADINGS & PARAGRAPH STYLING ========== */
-h2 {
-    text-align: center; /* Centers all h2 subheadings */
+/* ====== HEADINGS & PARAGRAPH STYLING ====== */
+/* Subheadings on the page */
+h2, h3 {
+    text-align: center;  /* Centered */
+    color: #ffffff;      /* White for contrast on blue */
 }
 
-/* General text block styling */
-#text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Friendly font */
-    font-size: 20px;         /* Larger, readable text size */
-    text-align: left;        /* Left-aligns the paragraph text */
-    margin: 20px;            /* Adds margin around the text block */
-    line-height: 1.6;        /* Sets space between lines for readability */
+/* Paragraph text and info blocks */
+.text, .treaty-text, #text {
+    font-size: 20px;                /* Easy to read */
+    text-align: left;               /* Aligned left */
+    margin: 20px;                   /* Adds space around */
+    line-height: 1.6;               /* Comfortable spacing */
 }
 
-/* ========== IMAGE STYLING ========== */
+/* ====== IMAGE STYLING ====== */
+/* General image layout for the page */
 #images, #image {
-    width: auto;                 /* Let images size naturally based on height */
-    height: 300px;               /* Sets a fixed height of 300px */
-    display: block;              /* Makes the image behave like a block element */
-    margin: 20px auto;           /* Adds top/bottom margin and centers horizontally */
+    width: auto;                            /* Width based on height */
+    height: 300px;                          /* Fixed height */
+    display: block;                         /* Makes image behave like block */
+    margin: 20px auto;                      /* Centers image */
+    border-radius: 15px;                    /* Rounded corners */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
-/* ========== FOOTER STYLING ========== */
+/* ====== FOOTER STYLING ====== */
+/* Styles the page footer */
 footer {
-    text-align: center;          /* Centers the footer text */
-    color: rgb(0, 0, 0);         /* Sets footer text color to black */
-    font-size: 14px;             /* Smaller text size for the footer */
-    border-radius: 25px;         /* Rounds the corners of the footer */
-    background: #ffffff;         /* White background for the footer */
-    padding: 20px;               /* Adds padding inside the footer */
-    width: auto;                 /* Allows footer to grow based on content */
-    height: 20px;                /* Sets fixed height for footer */
+    text-align: center;         /* Centers text */
+    color: #000000;             /* Black text */
+    font-size: 14px;            /* Small text */
+    border-radius: 25px;        /* Rounded corners */
+    background: #ffffff;        /* White background */
+    padding: 20px;              /* Inner space */
+    height: auto;               /* Auto height */
+    margin-top: 30px;           /* Spacing from above */
 }
 
-/* ========== TREATY HIGHLIGHT STYLING ========== */
+/* ====== TREATY HIGHLIGHTS & BOXES ====== */
+/* Highlights important treaty info */
 .highlights {
-    background-color: #f0e68c;   /* Highlight background in light yellow */
-    padding: 10px;               /* Adds padding around highlighted text */
-    font-weight: bold;          /* Makes the text bold */
+    background-color: #f0e68c;  /* Light yellow highlight */
+    padding: 10px;              /* Inner padding */
+    font-weight: bold;          /* Bold text */
+    display: inline-block;      /* Only as wide as content */
+    border-radius: 10px;        /* Rounded edges */
 }
 
-/* General treaty information box */
-
-/* highlight basically just highlights the treaty location text */
-.highlights {
-    background-color: #f0e68c;
-    padding: 10px;
-    font-weight: bold;
-    display: inline-block;
-}
-
+/* Treaties info box (around paragraphs or facts) */
 .treaty-info {
-    background-color: #ffffff;  /* White background for contrast */
-    padding: 5px;               /* Adds some padding inside the box */
-    border-radius: 10px;        /* Slightly rounded corners */
+    background-color: #ffffff;  /* White box */
+    padding: 10px 20px;         /* Padding inside */
+    border-radius: 15px;        /* Rounded corners */
+    margin: 20px;               /* Margin around box */
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-/* ========== EMBEDDED VIDEO STYLING ========== */
+/* ====== EMBEDDED VIDEO STYLING ====== */
+/* Container for iframe to center it */
 .iframe-container {
-    display: flex;              /* Uses flexbox to center the iframe */
-    justify-content: center;    /* Horizontally centers the iframe */
-    align-items: center;        /* Vertically centers the iframe */
-    margin: 20px 0;             /* Adds top and bottom margin */
+    display: flex;              /* Flexbox */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    margin: 30px 0;             /* Vertical margin */
 }
 
-/* Responsive iframe (for YouTube videos, etc.) */
+/* Styles the iframe itself */
 iframe {
-    max-width: 800px;           /* Max width of video */
-    width: 100%;                /* Make iframe responsive to screen size */
-}
-
-/* Additional treaty text styling */
-.treaty-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Friendly font */
-    font-size: 20px;             /* Good-sized text for reading */
-    text-align: left;            /* Aligns treaty text to the left */
-    margin: 20px;                /* Adds space around the paragraph */
-    line-height: 1.6;            /* Comfortable line spacing */
+    max-width: 800px;           /* Max video width */
+    width: 100%;                /* Full width inside container */
+    border-radius: 10px;        /* Rounded corners */
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow around video */
 }
