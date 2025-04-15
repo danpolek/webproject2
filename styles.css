@@ -5,7 +5,7 @@
 /* Sets the base font, background color, and text color for the site */
 body {
     font-family: 'Quicksand', sans-serif; /* Friendly font for kids and teens */
-    background-color: #08b2fc;            /* Bright blue background */
+            background-color: #f3efe0;   
     color: #1a1a1a;                        /* Nearly black text for contrast */
     margin: 0;                             /* Removes default body margin */
     padding: 0;                            /* Removes default padding */
