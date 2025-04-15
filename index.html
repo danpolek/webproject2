@@ -1,18 +1,3 @@
-/*
-Colour Theme Chosen: Earth Tone / Natural Colour Family
-
-Reason: I chose an earth-tone colour palette (browns, greens, soft yellows, and creams) because these colours are often associated with nature, tradition, land, and history. They reflect the natural landscape of the Treaty 4 territory and create a warm, respectful tone for this educational website. These colours support the purpose of the site, which is to educate youth about Indigenous history in a culturally respectful and accessible way.
-*/
-
-<!--  
-Name: Daniel Aduayi
-Course: PTEC
-Teacher: Ms. Hoitink
-School: PTC
-Date Last Modified: April 10, 2025 
-Description: This is a webpage about Treaty 4, its history, and its significance. It includes sections on the treaty gathering, location, First Nations involved, and its modern-day impact.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,87 +5,90 @@ Description: This is a webpage about Treaty 4, its history, and its significance
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 4 - Understanding Our Shared History</title>
     <link rel="stylesheet" href="styles.css" />
-
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f3efe0;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3efe0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-    .header {
-        background-color: #d2b48c;
-        color: #000;
-    }
+        .header {
+            background-color: #d2b48c;
+            color: #000;
+        }
 
-    h1 {
-        font-family: 'Georgia', serif;
-        font-size: 28px;
-    }
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+        }
 
-    nav {
-        background-color: #8f9779;
-        color: white;
-    }
+        nav {
+            background-color: #8f9779;
+            color: white;
+        }
 
-    nav a {
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-    }
+        nav a {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
 
-    nav a:hover {
-        background-color: #b8b88f;
-        color: #000;
-    }
+        nav a:hover {
+            background-color: #b8b88f;
+            color: #000;
+        }
 
-    #text, .treaty-text {
-        font-family: 'Comic Sans MS', 'Gill Sans', Calibri, sans-serif;
-        font-size: 18px;
-        color: #2f2f2f;
-    }
+        #text, .treaty-text {
+            font-family: 'Verdana', 'Gill Sans', Calibri, sans-serif;
+            font-size: 18px;
+            color: #2f2f2f;
+        }
 
-    #images, #image, #treaty4-map {
-        border: 4px solid #a67b5b;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
+        #images, #image, #treaty4-map {
+            border: 4px solid #a67b5b;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-    a:focus {
-        outline: 3px dashed #ffcc00;
-    }
+        a:focus {
+            outline: 3px dashed #ffcc00;
+        }
 
-    iframe, img {
-        max-width: 100%;
-        height: auto;
-    }
+        iframe, img {
+            max-width: 100%;
+            height: auto;
+        }
 
-    .location-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    .text {
-        flex: 1;
-    }
-    .image img {
-        width: 200px;
-        height: auto;
-        border-radius: 10px;
-    }
-    .image-container {
-        text-align: center;
-        margin: 20px 0;
-    }
-    #treaty4-map {
-        width: 200px;
-        height: 300px;
-        border-radius: 10px;
-        display: inline-block;
-        margin: 0 auto;
-    }
+        .location-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #treaty4-map {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -113,10 +101,10 @@ Description: This is a webpage about Treaty 4, its history, and its significance
 
 <!-- Navigation bar -->
 <nav role="navigation" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resources.html">Resources</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" aria-label="Go to Home page">Home</a>
+    <a href="about.html" aria-label="Learn more about Treaty 4">About</a>
+    <a href="resources.html" aria-label="Explore resources for Treaty 4">Resources</a>
+    <a href="contact.html" aria-label="Contact us">Contact</a>
 </nav>
 
 <!-- Main content -->
@@ -138,7 +126,7 @@ Description: This is a webpage about Treaty 4, its history, and its significance
 
         <figure>
             <img id="images" src="https://fhqtc.com/wp-content/uploads/2019/04/Treat4Logo-1024x593.jpg" alt="Colorful Treaty 4 flag with four symbolic sections representing unity, land, community, and peace" />
-            <figcaption><a href="https://www.reginathunder.ca/treaty4">Source for the image of the Treaty 4 flag</a></figcaption>
+            <figcaption><a href="https://www.reginathunder.ca/treaty4" alt="Source for the image of the Treaty 4 flag">Source for the image of the Treaty 4 flag</a></figcaption>
         </figure>
 
         <p id="text">
@@ -156,7 +144,7 @@ Description: This is a webpage about Treaty 4, its history, and its significance
         <h2 id="map-title">Map of Treaty 4 Reserve</h2>
         <div class="iframe-container">
             <iframe 
-                src="https://maps.app.goo.gl/gCDheaHGbvkS93YV8"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7091.786973718248!2d-103.79649302041452!3d50.7668750661632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531dc23bf60fb11d%3A0x8b1984b9b3ac662a!2sFort%20Qu&#39;Appelle%2C%20SK%2C%20Canada!5e0!3m2!1sen!2sus!4v1744686971894!5m2!1sen!2sus"
                 width="100%" 
                 height="250px" 
                 style="border:0; display:block;" 
@@ -189,15 +177,6 @@ Description: This is a webpage about Treaty 4, its history, and its significance
             <figcaption><a href="https://scoinc.mb.ca/treaties/">Source for the image above</a></figcaption>
         </figure>
     </section>
-        <!-- YouTube Video Section -->
-        <section aria-labelledby="video-title">
-            <h2 id="video-title">Treaty 4 - Watch and Learn</h2>
-            <div class="iframe-container" style="text-align: center; margin: 20px 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uy_1I5F2w8s?si=Y4JrRcTI-tE_VoL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <a href="https://www.youtube.com/embed/uy_1I5F2w8s?si=Y4JrRcTI-tE_VoL4">likt for the video above</a>
-        </section>
-
 
     <!-- First Nations in Treaty 4 -->
     <section aria-labelledby="firstnations-title">
@@ -243,3 +222,4 @@ Description: This is a webpage about Treaty 4, its history, and its significance
 </footer>
 </body>
 </html>
+
