@@ -1,154 +1,145 @@
-/* ====== GLOBAL BODY STYLING ====== */
-/* Imports a clean, modern Google Font */
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
-/* Sets the base font, background color, and text color for the site */
+/* Set body font and layout */
 body {
-    font-family: 'Quicksand', sans-serif; /* Friendly font for kids and teens */
-            background-color: #f3efe0;   
-    color: #1a1a1a;                        /* Nearly black text for contrast */
-    margin: 0;                             /* Removes default body margin */
-    padding: 0;                            /* Removes default padding */
+    font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
+    background-color: #f3efe0; /* Light background color */
+    color: #1a1a1a; /* Dark text for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-/* ====== HEADER STYLING ====== */
-/* Styles the top header section that includes the logo and title */
+/* Style the header */
 .header {
-    display: flex;                 /* Uses flexbox for layout */
-    align-items: center;          /* Vertically centers items */
-    justify-content: center;      /* Horizontally centers items */
-    gap: 10px;                    /* Adds space between items */
-    background-color: #ffffff;    /* White background */
-    border-radius: 25px;          /* Rounded corners */
-    padding: 20px;                /* Inner space */
+    display: flex; /* Use flex layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+    background-color: #ffffff; /* White background */
+    border-radius: 25px; /* Rounded corners */
+    padding: 20px; /* Space inside */
 }
 
-/* Sets the size of the logo image */
+/* Set logo size */
 .header img {
     height: 125px; /* Logo height */
 }
 
-/* Styles the main title of the page */
+/* Style main heading */
 h1 {
-    text-align: center;   /* Centered text */
-    color: #000000;       /* Black color */
-    font-size: 2.5em;     /* Large size */
+    text-align: center; /* Center the text */
+    color: #000000; /* Black color */
+    font-size: 2.5em; /* Big font size */
 }
 
-/* ====== NAVIGATION BAR ====== */
-/* Styles the navigation bar container */
+/* Style nav bar */
 nav {
-    background-color: #ffffff; /* White background for nav */
-    display: flex;             /* Flexbox for layout */
-    justify-content: center;   /* Center nav items */
-    align-items: center;       /* Vertically center items */
-    flex-wrap: wrap;           /* Wrap nav items on small screens */
-    border-radius: 25px;       /* Rounded corners */
-    padding: 20px;             /* Inner space */
-    width: fit-content;        /* Shrinks to fit links */
-    margin: 20px auto;         /* Centers nav in the page */
+    background-color: #ffffff; /* White background */
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center links */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Wrap on small screens */
+    border-radius: 25px; /* Rounded edges */
+    padding: 20px; /* Space inside */
+    width: fit-content; /* Shrink to fit content */
+    margin: 20px auto; /* Center on page */
 }
 
-/* Styles each nav link */
+/* Style nav links */
 nav a {
-    color: #1a1a1a;            /* Blackish text */
-    text-align: center;        /* Center text inside link */
-    padding: 14px 20px;        /* Space around link */
-    text-decoration: none;     /* Removes underline */
-    font-weight: bold;         /* Makes text bold */
+    color: #1a1a1a; /* Dark text */
+    text-align: center; /* Center link text */
+    padding: 14px 20px; /* Space inside link */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
     transition: all 0.2s ease-in-out; /* Smooth hover */
 }
 
-/* Hover effect for nav links */
+/* Nav link hover effect */
 nav a:hover {
-    background-color: #f0e68c; /* Light yellow on hover */
-    color: #000000;            /* Stays black on hover */
-    border-radius: 10px;       /* Rounded on hover */
+    background-color: #f0e68c; /* Yellow background on hover */
+    color: #000000; /* Stay black on hover */
+    border-radius: 10px; /* Round corners on hover */
 }
 
-/* ====== LOGO HOVER EFFECT ====== */
-/* Default logo state */
+/* Normal logo */
 #logo {
-    transform: scale(1);                      /* Normal size */
-    transition: transform 0.3s ease-in-out;   /* Smooth animation */
+    transform: scale(1); /* Normal size */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
 }
 
-/* Grows logo slightly on hover */
+/* Logo on hover */
 #logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slightly bigger */
 }
 
-/* ====== HEADINGS & PARAGRAPH STYLING ====== */
-/* Subheadings on the page */
+/* Style subheadings */
 h2, h3 {
-    text-align: center;  /* Centered */
-    color: #ffffff;      /* White for contrast on blue */
+    text-align: center; /* Centered */
+    color: #ffffff; /* White text */
 }
 
-/* Paragraph text and info blocks */
+/* Style text blocks */
 .text, .treaty-text, #text {
-    font-size: 20px;                /* Easy to read */
-    text-align: left;               /* Aligned left */
-    margin: 20px;                   /* Adds space around */
-    line-height: 1.6;               /* Comfortable spacing */
+    font-size: 20px; /* Easy to read */
+    text-align: left; /* Align left */
+    margin: 20px; /* Space around */
+    line-height: 1.6; /* Line spacing */
 }
 
-/* ====== IMAGE STYLING ====== */
-/* General image layout for the page */
+/* Style images */
 #images, #image {
-    width: auto;                            /* Width based on height */
-    height: 300px;                          /* Fixed height */
-    display: block;                         /* Makes image behave like block */
-    margin: 20px auto;                      /* Centers image */
-    border-radius: 15px;                    /* Rounded corners */
+    width: auto; /* Auto width */
+    height: 300px; /* Fixed height */
+    display: block; /* Block element */
+    margin: 20px auto; /* Centered */
+    border-radius: 15px; /* Rounded corners */
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
-/* ====== FOOTER STYLING ====== */
-/* Styles the page footer */
+/* Style footer */
 footer {
-    text-align: center;         /* Centers text */
-    color: #000000;             /* Black text */
-    font-size: 14px;            /* Small text */
-    border-radius: 25px;        /* Rounded corners */
-    background: #ffffff;        /* White background */
-    padding: 20px;              /* Inner space */
-    height: auto;               /* Auto height */
-    margin-top: 30px;           /* Spacing from above */
+    text-align: center; /* Centered text */
+    color: #000000; /* Black text */
+    font-size: 14px; /* Small text */
+    border-radius: 25px; /* Rounded edges */
+    background:#f3efe0; /* light background */
+    padding: 20px; /* Inner space */
+    height: auto; /* Automatic height */
+    margin-top: 30px; /* Space above */
 }
 
-/* ====== TREATY HIGHLIGHTS & BOXES ====== */
-/* Highlights important treaty info */
+/* Highlight important text */
 .highlights {
-    background-color: #f0e68c;  /* Light yellow highlight */
-    padding: 10px;              /* Inner padding */
-    font-weight: bold;          /* Bold text */
-    display: inline-block;      /* Only as wide as content */
-    border-radius: 10px;        /* Rounded edges */
+    background-color: #f0e68c; /* Yellow highlight */
+    padding: 10px; /* Space inside */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Only as wide as needed */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Treaties info box (around paragraphs or facts) */
+/* Style info boxes */
 .treaty-info {
-    background-color: #ffffff;  /* White box */
-    padding: 10px 20px;         /* Padding inside */
-    border-radius: 15px;        /* Rounded corners */
-    margin: 20px;               /* Margin around box */
+    background-color: #ffffff; /* White background */
+    padding: 10px 20px; /* Padding inside */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Space around */
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-/* ====== EMBEDDED VIDEO STYLING ====== */
-/* Container for iframe to center it */
+/* Center video container */
 .iframe-container {
-    display: flex;              /* Flexbox */
-    justify-content: center;    /* Center horizontally */
-    align-items: center;        /* Center vertically */
-    margin: 30px 0;             /* Vertical margin */
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 30px 0; /* Top and bottom margin */
 }
 
-/* Styles the iframe itself */
+/* Style the video */
 iframe {
-    max-width: 800px;           /* Max video width */
-    width: 100%;                /* Full width inside container */
-    border-radius: 10px;        /* Rounded corners */
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow around video */
+    max-width: 800px; /* Max width */
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
