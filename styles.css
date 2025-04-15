@@ -1,145 +1,146 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
-/* Set body font and layout */
+/* Set up the whole page */
 body {
-    font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
-    background-color: #f3efe0; /* Light background color */
-    color: #1a1a1a; /* Dark text for contrast */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    font-family: 'Quicksand', sans-serif; /* Use a clean, modern font */
+    background-color: #f3efe0; /* Light cream background */
+    color: #1a1a1a; /* Dark gray text for easy reading */
+    margin: 0; /* No default space around page */
+    padding: 0; /* No default space inside page */
 }
 
-/* Style the header */
+/* Top header section */
 .header {
-    display: flex; /* Use flex layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    gap: 10px; /* Space between items */
-    background-color: #ffffff; /* White background */
-    border-radius: 25px; /* Rounded corners */
-    padding: 20px; /* Space inside */
+    display: flex; /* Put logo and title in a row */
+    align-items: center; /* Align vertically in the middle */
+    justify-content: center; /* Center everything horizontally */
+    gap: 10px; /* Add space between logo and title */
+    background-color: #333333; /* Dark gray background */
+    border-radius: 25px; /* Smooth, rounded corners */
+    padding: 20px; /* Space inside the header */
 }
 
-/* Set logo size */
+/* Logo image inside the header */
 .header img {
-    height: 125px; /* Logo height */
+    height: 125px; /* Make the logo 125px tall */
 }
 
-/* Style main heading */
+/* Main heading (page title) */
 h1 {
-    text-align: center; /* Center the text */
-    color: #000000; /* Black color */
-    font-size: 2.5em; /* Big font size */
+    text-align: center; /* Center the heading */
+    color: #ffffff; /* White text for contrast */
+    font-size: 2.5em; /* Bigger text */
 }
 
-/* Style nav bar */
+/* Navigation bar styles */
 nav {
-    background-color: #ffffff; /* White background */
-    display: flex; /* Use flex layout */
-    justify-content: center; /* Center links */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Wrap on small screens */
-    border-radius: 25px; /* Rounded edges */
-    padding: 20px; /* Space inside */
-    width: fit-content; /* Shrink to fit content */
-    margin: 20px auto; /* Center on page */
+    background-color: #1a1a1a; /* Dark background for nav bar */
+    display: flex; /* Put links in a row */
+    justify-content: center; /* Center them across */
+    align-items: center; /* Center them vertically */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    border-radius: 25px; /* Round the edges */
+    padding: 20px; /* Space inside the nav bar */
+    width: fit-content; /* Shrink to fit the links */
+    margin: 20px auto; /* Center the nav bar on the page */
 }
 
-/* Style nav links */
+/* Style for navigation links */
 nav a {
-    color: #1a1a1a; /* Dark text */
-    text-align: center; /* Center link text */
-    padding: 14px 20px; /* Space inside link */
+    color: #ffffff; /* White text links */
+    text-align: center; /* Center the link text */
+    padding: 14px 20px; /* Add space inside the link */
     text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold text */
-    transition: all 0.2s ease-in-out; /* Smooth hover */
+    font-weight: bold; /* Make link text bold */
+    transition: all 0.2s ease-in-out; /* Smooth animation when hovered */
 }
 
-/* Nav link hover effect */
+/* Hover effect for links */
 nav a:hover {
-    background-color: #f0e68c; /* Yellow background on hover */
-    color: #000000; /* Stay black on hover */
-    border-radius: 10px; /* Round corners on hover */
+    background-color: #f0e68c; /* Light yellow when hovered */
+    color: #000000; /* Turn text black when hovered */
+    border-radius: 10px; /* Rounded corners on hover */
 }
 
-/* Normal logo */
+/* Logo animation on hover */
 #logo {
     transform: scale(1); /* Normal size */
     transition: transform 0.3s ease-in-out; /* Smooth scaling */
 }
 
-/* Logo on hover */
 #logo:hover {
-    transform: scale(1.1); /* Slightly bigger */
+    transform: scale(1.1); /* Slightly grow on hover */
 }
 
-/* Style subheadings */
+/* Subheadings (h2 and h3) */
 h2, h3 {
-    text-align: center; /* Centered */
-    color: #ffffff; /* White text */
+    text-align: center; /* Center the subheadings */
+    color: #2c2c2c; /* Slightly lighter gray */
 }
 
-/* Style text blocks */
+/* Text paragraphs and blocks */
 .text, .treaty-text, #text {
-    font-size: 20px; /* Easy to read */
-    text-align: left; /* Align left */
-    margin: 20px; /* Space around */
-    line-height: 1.6; /* Line spacing */
+    font-size: 20px; /* Easy to read size */
+    text-align: left; /* Align text to the left */
+    margin: 20px; /* Add space around the text */
+    line-height: 1.6; /* Space between lines */
+    color: #1a1a1a; /* Dark text for contrast */
 }
 
-/* Style images */
+/* Images used on the site */
 #images, #image {
-    width: auto; /* Auto width */
+    width: auto; /* Auto size for width */
     height: 300px; /* Fixed height */
-    display: block; /* Block element */
-    margin: 20px auto; /* Centered */
+    display: block; /* Show as a block (not inline) */
+    margin: 20px auto; /* Centered on page */
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for pop-out look */
 }
 
-/* Style footer */
+/* Footer at the bottom of the page */
 footer {
-    text-align: center; /* Centered text */
-    color: #000000; /* Black text */
-    font-size: 14px; /* Small text */
-    border-radius: 25px; /* Rounded edges */
-            background-color: #d2b48c;/* darkish background */
-    padding: 20px; /* Inner space */
-    height: auto; /* Automatic height */
-    margin-top: 30px; /* Space above */
+    text-align: center; /* Center the text */
+    color: #ffffff; /* White text */
+    font-size: 14px; /* Smaller text */
+    border-radius: 25px; /* Round the footer edges */
+    background-color: #333333; /* Dark background */
+    padding: 20px; /* Padding inside */
+    margin-top: 30px; /* Space above footer */
 }
 
-/* Highlight important text */
+/* Highlight box for key info */
 .highlights {
-    background-color: #f0e68c; /* Yellow highlight */
-    padding: 10px; /* Space inside */
-    font-weight: bold; /* Bold text */
+    background-color: #f0e68c; /* Yellow background */
+    padding: 10px; /* Padding inside */
+    font-weight: bold; /* Make text bold */
     display: inline-block; /* Only as wide as needed */
     border-radius: 10px; /* Rounded corners */
+    color: #000000; /* Black text */
 }
 
-/* Style info boxes */
+/* Info section boxes */
 .treaty-info {
-     background-color: #d2b48c; /* White background */
-    padding: 10px 20px; /* Padding inside */
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Space around */
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background-color: #f9e2b4; /* Soft tan background */
+    padding: 10px 20px; /* Padding around content */
+    border-radius: 15px; /* Rounded box */
+    margin: 20px; /* Space around box */
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light drop shadow */
+    color: #1a1a1a; /* Dark text */
 }
 
-/* Center video container */
+/* Wrapper for video iframe */
 .iframe-container {
-    display: flex; /* Use flex layout */
+    display: flex; /* Use flex to center */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin: 30px 0; /* Top and bottom margin */
+    margin: 30px 0; /* Space above and below */
 }
 
-/* Style the video */
+/* Video iframe styling */
 iframe {
-    max-width: 800px; /* Max width */
-    width: 100%; /* Full width */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    max-width: 800px; /* Max width for video */
+    width: 100%; /* Full width on small screens */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
