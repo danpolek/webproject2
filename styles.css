@@ -4,145 +4,153 @@
 /* Set body font and layout */
 body {
     font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
-    background-color: #ffffff; /* White background for strong contrast */
-    color: #1a1a1a; /* Very dark gray text for easy reading */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background-color: #ffffff; /* White background */
+    color: #1a1a1a; /* Dark text */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    line-height: 1.6; /* Space between lines */
 }
 
-/* Style the header */
+/* Header section */
 .header {
-    display: flex; /* Use flexbox for layout */
+    display: flex; /* Use flex layout */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
     gap: 10px; /* Space between items */
-    background-color: #004d40; /* Dark teal background for strong contrast */
+    background-color: #004d40; /* Dark teal background */
     border-radius: 25px; /* Rounded corners */
     padding: 20px; /* Space inside */
 }
 
-/* Set logo size */
+/* Header logo image */
 .header img {
-    height: 125px; /* Logo height */
+    height: 125px; /* Logo size */
 }
 
-/* Style main heading */
+/* Main heading */
 h1 {
-    text-align: center; /* Center the text */
-    color: #ffffff; /* White text for contrast on dark header */
-    font-size: 2.5em; /* Large font size */
+    text-align: center; /* Center text */
+    color: #ffffff; /* White text */
+    font-size: 2.5em; /* Big font */
 }
 
-/* Style nav bar */
+/* Navigation bar */
 nav {
     background-color: #00695c; /* Dark green background */
     display: flex; /* Use flex layout */
-    justify-content: center; /* Center links horizontally */
-    align-items: center; /* Center links vertically */
-    flex-wrap: wrap; /* Wrap on small screens */
+    justify-content: center; /* Center links */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Wrap links on small screens */
     border-radius: 25px; /* Rounded edges */
-    padding: 20px; /* Padding inside */
-    width: fit-content; /* Fit content width */
-    margin: 20px auto; /* Center on page */
+    padding: 20px; /* Space inside */
+    width: fit-content; /* Fit content */
+    margin: 20px auto; /* Centered on page */
 }
 
-/* Style nav links */
+/* Nav links */
 nav a {
-    color: #ffffff; /* White text for high contrast */
-    text-align: center; /* Center link text */
-    padding: 14px 20px; /* Space inside link */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding inside */
     text-decoration: none; /* No underline */
     font-weight: bold; /* Bold text */
-    transition: all 0.2s ease-in-out; /* Smooth hover transition */
+    transition: all 0.2s ease-in-out; /* Smooth transition */
 }
 
-/* Nav link hover effect */
+/* Nav link hover */
 nav a:hover {
-    background-color: #a7ffeb; /* Light aqua background on hover */
-    color: #000000; /* Black text on hover for strong contrast */
-    border-radius: 10px; /* Round corners on hover */
+    background-color: #a7ffeb; /* Aqua background */
+    color: #000000; /* Black text */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Logo default */
+/* Nav link focus (for keyboard users) */
+nav a:focus {
+    outline: 3px solid #ffd54f; /* Yellow outline */
+    outline-offset: 4px; /* Space around outline */
+}
+
+/* Logo default size */
 #logo {
     transform: scale(1); /* Normal size */
-    transition: transform 0.3s ease-in-out; /* Smooth scaling */
+    transition: transform 0.3s ease-in-out; /* Smooth scale */
 }
 
 /* Logo on hover */
 #logo:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); /* Grow slightly */
 }
 
-/* Style subheadings */
+/* Subheadings */
 h2, h3 {
-    text-align: center; /* Center text */
-    color: #004d40; /* Dark teal for good contrast */
+    text-align: center; /* Centered text */
+    color: #004d40; /* Teal color */
 }
 
-/* Style text blocks */
+/* Main text blocks */
 .text, .treaty-text, #text {
-    font-size: 20px; /* Easy to read size */
-    text-align: left; /* Align text to the left */
+    font-size: 20px; /* Easy to read */
+    text-align: left; /* Left aligned */
     margin: 20px; /* Space around */
-    line-height: 1.6; /* Better line spacing */
-    color: #1a1a1a; /* Dark text for readability */
+    line-height: 1.6; /* Line spacing */
+    color: #1a1a1a; /* Dark text */
     background-color: #f2f2f2; /* Light gray background */
-    padding: 15px; /* Space inside */
+    padding: 15px; /* Padding inside */
     border-radius: 10px; /* Rounded corners */
 }
 
-/* Style images */
+/* Images */
 #images, #image {
     width: auto; /* Auto width */
-    height: 300px; /* Fixed height */
-    display: block; /* Make images block elements */
-    margin: 20px auto; /* Center images */
+    max-width: 100%; /* Responsive size */
+    height: auto; /* Auto height */
+    display: block; /* Block display */
+    margin: 20px auto; /* Centered image */
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
-/* Style footer */
+/* Footer section */
 footer {
-    text-align: center; /* Centered text */
-    color: #ffffff; /* White text for dark background */
-    font-size: 14px; /* Small font size */
-    border-radius: 25px; /* Rounded edges */
-    background-color: #263238; /* Dark blue-gray background */
-    padding: 20px; /* Inner space */
+    text-align: center; /* Center text */
+    color: white; /* White text */
+    font-size: 14px; /* Small text */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #5F4026; /* Dark brown background */
+    padding: 20px; /* Space inside */
     height: auto; /* Auto height */
     margin-top: 30px; /* Space above */
 }
 
-/* Highlight important text */
+/* Highlight text */
 .highlights {
-    background-color: #ffc107; /* Bright amber background */
-    color: #000000; /* Black text for contrast */
+    background-color: #ffc107; /* Yellow background */
+    color: #000000; /* Black text */
     padding: 10px; /* Space inside */
     font-weight: bold; /* Bold text */
-    display: inline-block; /* Only take needed width */
+    display: inline-block; /* Inline block */
     border-radius: 10px; /* Rounded corners */
 }
 
-/* Style info boxes */
+/* Info boxes */
 .treaty-info {
-    background-color: #d7ccc8; /* Soft tan background */
-    color: #1a1a1a; /* Dark text for readability */
-    padding: 10px 20px; /* Padding inside */
+    background-color: #d7ccc8; /* Light tan background */
+    color: #1a1a1a; /* Dark text */
+    padding: 10px 20px; /* Space inside */
     border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Space around */
+    margin: 20px; /* Margin around */
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-/* Center video container */
+/* Video container */
 .iframe-container {
-    display: flex; /* Use flex layout */
+    display: flex; /* Flex layout */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin: 30px 0; /* Top and bottom margin */
+    margin: 30px 0; /* Space top and bottom */
 }
 
-/* Style the video */
+/* Video style */
 iframe {
     max-width: 800px; /* Max width */
     width: 100%; /* Full width */
