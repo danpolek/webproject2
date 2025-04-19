@@ -31,6 +31,7 @@ body {
     margin: 0; /* No margin */
     padding: 0; /* No padding */
     line-height: 1.6; /* Space between lines */
+    font-size: 1rem; /* Flexible font size */
 }
 
 /* Header section */
@@ -111,7 +112,7 @@ h2, h3 {
 
 /* Main text blocks */
 .text, .treaty-text, #text {
-    font-size: 20px; /* Easy to read */
+    font-size: 1.2rem; /* More flexible size */
     text-align: left; /* Left aligned */
     margin: 20px; /* Space around */
     line-height: 1.6; /* Line spacing */
@@ -136,7 +137,7 @@ h2, h3 {
 footer {
     text-align: center; /* Center text */
     color: white; /* White text */
-    font-size: 14px; /* Small text */
+    font-size: 1rem; /* Adjust font size */
     border-radius: 25px; /* Rounded corners */
     background-color: #5F4026; /* Dark brown background */
     padding: 20px; /* Space inside */
@@ -174,8 +175,44 @@ footer {
 
 /* Video style */
 iframe {
-    max-width: 800px; /* Max width */
+    max-width: 100%; /* Full width */
     width: 100%; /* Full width */
+    height: auto; /* Auto height */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    /* Body font size adjustment */
+    body {
+        font-size: 0.9rem;
+    }
+
+    /* Header layout adjustment */
+    .header {
+        flex-direction: column; /* Stack logo and title */
+        text-align: center;
+    }
+
+    /* Navigation adjustment */
+    nav {
+        flex-direction: column; /* Stack links vertically */
+        padding: 10px; /* Less padding */
+    }
+
+    /* Image responsiveness */
+    #images, #image {
+        margin: 10px auto; /* Reduce margins */
+    }
+
+    /* Text block padding adjustments */
+    .text, .treaty-text, #text {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    /* Footer text size */
+    footer {
+        font-size: 0.8rem; /* Smaller font size */
+    }
 }
