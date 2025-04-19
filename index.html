@@ -8,26 +8,31 @@ Date Last Modified: (16th)
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treaty 4 - Understanding Our Shared History</title>
-    <link rel="stylesheet" href="styles.css" />
-    </head>
 
-    <body>
+    <!-- Page title for browser tab -->
+    <title>Treaty 4 - Understanding Our Shared History</title>
+
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
     <!-- Header section with logo and page title -->
     <header class="header" tabindex="0">
         <img
-        id="logo"
-        src="download.png"
-        alt="Treaty 4 official logo representing unity between First Nations and the Crown"
-        width="150"
+            id="logo"
+            src="download.png"
+            alt="Treaty 4 official logo representing unity between First Nations and the Crown"
+            width="150"
         />
         <h1>Treaty 4 - Understanding Our Shared History and Its Lasting Impact</h1>
     </header>
 
-    <!-- Navigation bar -->
+    <!-- Navigation bar for site-wide links -->
     <nav role="navigation" aria-label="Main navigation" tabindex="0">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -35,165 +40,174 @@ Date Last Modified: (16th)
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main content -->
+    <!-- Main content area of the page -->
     <main role="main">
-        <!-- Treaty 4 Gathering Section -->
+        <!-- Section describing the Treaty 4 Gathering -->
         <section aria-labelledby="gathering-title" tabindex="0">
-        <h2 id="gathering-title"><i><b>TREATY 4 GATHERING</b></i></h2>
-        <article>
+            <h2 id="gathering-title"><i><b>TREATY 4 GATHERING</b></i></h2>
+            <article>
+                <p>
+                    Treaty 4 was signed on <strong>September 15, 1874</strong>, with British Queen Victoria
+                    joining with the Cree, Assiniboine, and Saulteaux peoples. The signing took six days to complete.
+                </p>
+                <p>
+                    The treaty was signed at
+                    <span style="color:grey; font-weight: bold;">Fort Qu'Appelle, Saskatchewan</span>,
+                    which remains an important historical site today.
+                </p>
+                <!-- External source link -->
+                <ul>
+                    <li>
+                        <a href="https://fhqtc.com/t4gathering/" target="_blank">Treaty 4 Gathering source</a>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Image of the Treaty 4 flag with a caption and link to image source -->
+            <figure class="image-container" tabindex="0">
+                <img
+                    id="images"
+                    src="https://fhqtc.com/wp-content/uploads/2019/04/Treat4Logo-1024x593.jpg"
+                    alt="Colorful Treaty 4 flag with four symbolic sections representing unity, land, community, and peace"
+                />
+                <figcaption>
+                    Image source:
+                    <a href="https://www.reginathunder.ca/treaty4" target="_blank">Regina Thunder</a>
+                </figcaption>
+            </figure>
+
+            <!-- Explanation of the meaning of the Treaty 4 flag -->
             <p>
-            Treaty 4 was signed on <strong>September 15, 1874</strong>, with British Queen Victoria
-            joining with the Cree, Assiniboine, and Saulteaux peoples. The signing took six days to complete.
+                The flag has four sections that represent Treaty agreements and aspects of community and life. 
+                It shows the creation of the promise:
+                <strong>"For As Long As The Sun Shines, Grass Grows, and Waters Flow"</strong>, 
+                a phrase still used in land acknowledgments today.
             </p>
+            <!-- Additional source link -->
+            <ul>
+                <li>
+                    <a href="https://fhqtc.com/t4gathering/" target="_blank">Treaty 4 Gathering source 2</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Embedded Google Map showing Treaty 4 location -->
+        <section aria-labelledby="map-title" tabindex="0">
+            <h2 id="map-title">Map of Treaty 4 Reserve</h2>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?... (truncated)"
+                    width="100%"
+                    height="250"
+                    style="border:0; display:block;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Map showing the Treaty 4 territory area across Saskatchewan, Manitoba, and Alberta"
+                    tabindex="0"
+                ></iframe>
+            </div>
+        </section>
+
+        <!-- Treaty 4 Location and Areas it Covers -->
+        <section aria-labelledby="location-title" tabindex="0">
+            <h2 id="location-title">Treaty 4 Location and Coverage</h2>
             <p>
-            The treaty was signed at
-            <span style="color:grey; font-weight: bold;">Fort Qu'Appelle, Saskatchewan</span>,
-            which remains an important historical site today.
+                Treaty 4 covers a large area of <strong>south Saskatchewan</strong>, extending into 
+                <strong>west Manitoba</strong> and a small part of <strong>Alberta</strong>. It includes over 
+                <strong>195,000 square kilometers</strong> of land.
+            </p>
+            <!-- Link to trusted source for more info -->
+            <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-4" target="_blank">
+                The Canadian Encyclopedia - Treaty 4
+            </a>
+
+            <!-- Subsection listing specific locations covered by Treaty 4 -->
+            <h3>Areas Included in Treaty 4</h3>
+            <ul>
+                <li>Southern <strong>Saskatchewan</strong> (including Regina, Moose Jaw, Yorkton, Fort Qu'Appelle)</li>
+                <li><strong>Western Manitoba</strong> (bordering Saskatchewan)</li>
+                <li>A small section of <strong>Alberta</strong></li>
+            </ul>
+
+            <!-- Map image showing Treaty 4 region -->
+            <figure class="image-container" tabindex="0">
+                <img
+                    id="treaty4-map"
+                    src="https://www.sac-isc.gc.ca/...jpg"
+                    alt="Map of Treaty 4 region showing provinces and communities covered by the agreement"
+                />
+                <figcaption>
+                    Image source:
+                    <a href="https://scoinc.mb.ca/treaties/" target="_blank">SCO Treaty Page</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- List of First Nations included in Treaty 4 -->
+        <section aria-labelledby="firstnations-title" tabindex="0">
+            <h3 id="firstnations-title">First Nations in Treaty 4 Territory</h3>
+            <p>
+                Treaty 4 includes <strong>35 First Nations</strong> from the Cree, Saulteaux (Ojibwe), and Assiniboine peoples. 
+                Some of these nations include:
             </p>
             <ul>
-            <li>
-                <a href="https://fhqtc.com/t4gathering/" target="_blank">Treaty 4 Gathering source</a>
-            </li>
+                <li>Cowessess First Nation</li>
+                <li>Piapot First Nation</li>
+                <li>Ochapowace First Nation</li>
+                <li>Pasqua First Nation</li>
+                <li>Kahkewistahaw First Nation</li>
             </ul>
-        </article>
-
-        <figure class="image-container" tabindex="0">
-            <img
-            id="images"
-            src="https://fhqtc.com/wp-content/uploads/2019/04/Treat4Logo-1024x593.jpg"
-            alt="Colorful Treaty 4 flag with four symbolic sections representing unity, land, community, and peace"
-            />
-            <figcaption>
-            Image source:
-            <a href="https://www.reginathunder.ca/treaty4" target="_blank">Regina Thunder</a>
-            </figcaption>
-        </figure>
-
-        <p>
-            The flag has four sections that represent Treaty agreements and aspects of community and life. 
-            It shows the creation of the promise:
-            <strong>"For As Long As The Sun Shines, Grass Grows, and Waters Flow"</strong>, 
-            a phrase still used in land acknowledgments today.
-        </p>
-        <ul>
-            <li>
-            <a href="https://fhqtc.com/t4gathering/" target="_blank">Treaty 4 Gathering source 2</a>
-            </li>
-        </ul>
         </section>
 
-        <!-- Embedded Google Map -->
-        <section aria-labelledby="map-title" tabindex="0">
-        <h2 id="map-title">Map of Treaty 4 Reserve</h2>
-        <div class="iframe-container">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7091.786973718248!2d-103.79649302041452!3d50.7668750661632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531dc23bf60fb11d%3A0x8b1984b9b3ac662a!2sFort%20Qu&#39;Appelle%2C%20SK%2C%20Canada!5e0!3m2!1sen!2sus!4v1744686971894!5m2!1sen!2sus"
-            width="100%"
-            height="250"
-            style="border:0; display:block;"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Map showing the Treaty 4 territory area across Saskatchewan, Manitoba, and Alberta"
-            tabindex="0"
-            ></iframe>
-        </div>
-        </section>
-
-        <!-- Treaty 4 Location and Coverage -->
-        <section aria-labelledby="location-title" tabindex="0">
-        <h2 id="location-title">Treaty 4 Location and Coverage</h2>
-        <p>
-            Treaty 4 covers a large area of <strong>south Saskatchewan</strong>, extending into 
-            <strong>west Manitoba</strong> and a small part of <strong>Alberta</strong>. It includes over 
-            <strong>195,000 square kilometers</strong> of land.
-        </p>
-        <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-4" target="_blank">
-            The Canadian Encyclopedia - Treaty 4
-        </a>
-        <h3>Areas Included in Treaty 4</h3>
-        <ul>
-            <li>Southern <strong>Saskatchewan</strong> (including Regina, Moose Jaw, Yorkton, Fort Qu'Appelle)</li>
-            <li><strong>Western Manitoba</strong> (bordering Saskatchewan)</li>
-            <li>A small section of <strong>Alberta</strong></li>
-        </ul>
-
-        <figure class="image-container" tabindex="0">
-            <img
-            id="treaty4-map"
-            src="https://www.sac-isc.gc.ca/DAM/DAM-ISC-SAC/DAM-REGIONS/STAGING/images-images/mb17map_treaty_1506363954517_eng.jpg"
-            alt="Map of Treaty 4 region showing provinces and communities covered by the agreement"
-            />
-            <figcaption>
-            Image source:
-            <a href="https://scoinc.mb.ca/treaties/" target="_blank">SCO Treaty Page</a>
-            </figcaption>
-        </figure>
-        </section>
-
-        <!-- First Nations in Treaty 4 -->
-        <section aria-labelledby="firstnations-title" tabindex="0">
-        <h3 id="firstnations-title">First Nations in Treaty 4 Territory</h3>
-        <p>
-            Treaty 4 includes <strong>35 First Nations</strong> from the Cree, Saulteaux (Ojibwe), and Assiniboine peoples. 
-            Some of these nations include:
-        </p>
-        <ul>
-            <li>Cowessess First Nation</li>
-            <li>Piapot First Nation</li>
-            <li>Ochapowace First Nation</li>
-            <li>Pasqua First Nation</li>
-            <li>Kahkewistahaw First Nation</li>
-        </ul>
-        </section>
-
-        <!-- Importance of Location -->
+        <!-- Why the location matters and how it relates to Indigenous culture -->
         <section class="treaty-info" aria-labelledby="location-importance-title" tabindex="0">
-        <h2 id="location-importance-title">Why is the Location Important?</h2>
-        <p class="highlights">Treaty 4 covers a large area of southern Saskatchewan.</p>
-        <p>
-            The land in Treaty 4 was originally home to Indigenous people who lived off the land, 
-            relying on the natural area for food, shelter, and trade. The signing of the treaty changed 
-            how land was used and led to the creation of reserves. 
-        </p>
+            <h2 id="location-importance-title">Why is the Location Important?</h2>
+            <p class="highlights">Treaty 4 covers a large area of southern Saskatchewan.</p>
+            <p>
+                The land in Treaty 4 was originally home to Indigenous people who lived off the land, 
+                relying on the natural area for food, shelter, and trade. The signing of the treaty changed 
+                how land was used and led to the creation of reserves. 
+            </p>
         </section>
 
-        <!-- YouTube Video -->
+        <!-- Educational YouTube video on Treaty 4 -->
         <section aria-labelledby="video-title" tabindex="0">
-        <h2 id="video-title">Treaty 4 Video Resource</h2>
-        <div class="iframe-container">
-            <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/uy_1I5F2w8s?si=gTWSAvsAvqNkNGUW"
-            title="YouTube video on Treaty 4 explained by Indigenous youth"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            tabindex="0"
-            ></iframe>
-        </div>
-        <p>
-            <a href="https://www.youtube.com/embed/uy_1I5F2w8s?si=gTWSAvsAvqNkNGUW" target="_blank">
-            Link for the YouTube video above
-            </a>
-        </p>
+            <h2 id="video-title">Treaty 4 Video Resource</h2>
+            <div class="iframe-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/uy_1I5F2w8s?si=gTWSAvsAvqNkNGUW"
+                    title="YouTube video on Treaty 4 explained by Indigenous youth"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    tabindex="0"
+                ></iframe>
+            </div>
+            <p>
+                <a href="https://www.youtube.com/embed/uy_1I5F2w8s?si=gTWSAvsAvqNkNGUW" target="_blank">
+                    Link for the YouTube video above
+                </a>
+            </p>
         </section>
 
-        <!-- Modern-Day Impact -->
+        <!-- Modern-day impact of Treaty 4 on communities -->
         <section aria-labelledby="impact-title" tabindex="0">
-        <h3 id="impact-title">How Treaty 4 Affects People Today</h3>
-        <p class="treaty-text">
-            Treaty 4 continues to play a major role in Indigenous and non-Indigenous relations in Canada. 
-            It set the base for Indigenous rights, government, and land negotiations. 
-            Many schools and communities honor Treaty 4 through land acknowledgments, cultural celebrations, and educational work.
-        </p>
+            <h3 id="impact-title">How Treaty 4 Affects People Today</h3>
+            <p class="treaty-text">
+                Treaty 4 continues to play a major role in Indigenous and non-Indigenous relations in Canada. 
+                It set the base for Indigenous rights, government, and land negotiations. 
+                Many schools and communities honor Treaty 4 through land acknowledgments, cultural celebrations, and educational work.
+            </p>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer section with copyright info -->
     <footer role="contentinfo" tabindex="0">
         <p>All rights reserved 2025 | Treaty 4 | By Daniel Aduayi</p>
-        </footer>
-    </body>
+    </footer>
+</body>
 </html>
+
