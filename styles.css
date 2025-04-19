@@ -1,21 +1,24 @@
 /* 
-    Colour Scheme - Treaty 4 Website syboliz peace love unity and connection between nations 
+    Colour Scheme - Treaty 4 Website
 
--  Monochromatic Teals:
-    #004d40, #00695c, #a7ffeb – Calm, cohesive, and clean
+    This palette symbolizes peace, love, unity, and connection between nations. 
+    It was chosen to reflect the spirit of Treaty 4 and to be accessible and engaging for youth audiences.
 
--  Complementary Accent:
-    #ffc107 – Bright yellow for highlights and contrast
+    - Monochromatic Teals:
+        #004d40, #00695c, #a7ffeb – Calm, cohesive, and clean
 
--  Earth Tone:
-    #5F4026 – Dark brown footer adds grounding and warmth
+    - Complementary Accent:
+        #ffc107 – Bright yellow for highlights and contrast
 
--  Neutrals:
-    #ffffff, #1a1a1a, #f2f2f2, #d7ccc8 – Support readability and balance
+    - Earth Tone:
+        #5F4026 – Dark brown footer adds grounding and warmth
 
-    Accessible, kid-friendly, and consistent with educational themes */
+    - Neutrals:
+        #ffffff, #1a1a1a, #f2f2f2, #d7ccc8 – Support readability and balance
 
-    /* I chose Sygma Grindset Color Palette because of how it matches the theme perfectly  */
+    I chose the Sygma Grindset Colour Palette because it matches the Treaty 4 theme perfectly 
+    and is suitable for educational websites aimed at Grades 4–8.
+*/
 
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
