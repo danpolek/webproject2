@@ -1,200 +1,483 @@
- Colour Scheme - Treaty 4 Website
+/*
+Treaty 4 Website Stylesheet
+Author: Daniel Aduayi
+Date: May 30, 2024
 
-    This palette symbolizes peace, love, unity, and connection between nations. 
-    It was chosen to reflect the spirit of Treaty 4 and to be accessible and engaging for youth audiences.
-    
-    - Monochromatic Teals: 
-        #004d40 (dark teal), #00695c (medium teal), #a7ffeb (light aqua)
-    - Complementary Accent: 
-        #ffc107 (bright yellow) 
-    - Earth Tone: 
-        #5f4026 (dark brown) for footer
-    - Neutrals:
-        #ffffff (white), #1a1a1a (dark gray), #f2f2f2 (light gray), #d7ccc8 (light tan)
+Colour Scheme:
+- Primary Teals: 
+  #004d40 (dark teal), #00695c (medium teal), #a7ffeb (light aqua)
+- Accent: 
+  #ffc107 (bright yellow) 
+- Earth Tone: 
+  #5f4026 (dark brown)
+- Neutrals:
+  #ffffff (white), #1a1a1a (dark gray), #f2f2f2 (light gray), #d7ccc8 (light tan)
+
+Typography:
+- Primary Font: Quicksand (Google Font)
+- Fallback: Sans-serif system fonts
 */
-/* 
-    Colour Scheme - Treaty 4 Website
-    The colours chosen represent peace, unity, and connection between nations, reflecting the essence of Treaty 4. 
-    The monochromatic teal shades symbolize calmness, while the complementary yellow accent represents hope and vibrancy.
-    Earth tones are used for grounding, and the neutrals balance the overall design, making it engaging for youth.
-*/
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+/* ================ BASE STYLES ================ */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
-/* Set body font and layout */
+:root {
+  /* Color Variables */
+  --teal-dark: #004d40;
+  --teal-medium: #00695c;
+  --aqua-light: #a7ffeb;
+  --yellow-accent: #ffc107;
+  --brown-dark: #5f4026;
+  --white: #ffffff;
+  --gray-dark: #1a1a1a;
+  --gray-light: #f2f2f2;
+  --tan-light: #d7ccc8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
-    background-color: #ffffff; /* White background */
-    color: #1a1a1a; /* Dark text */
-    margin: 0; /* No margin */
-    padding: 0; /* No padding */
-    line-height: 1.6; /* Space between lines */
-    font-size: 1rem; /* Flexible font size */
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--white);
+  color: var(--gray-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
-/* Header section */
+/* ================ LAND ACKNOWLEDGMENT ================ */
+.land-acknowledgment {
+  background-color: var(--teal-dark);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-bottom: 2px solid var(--yellow-accent);
+}
+
+.land-acknowledgment p {
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ================ HEADER STYLES ================ */
 .header {
-    display: flex; /* Use flex layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    gap: 10px; /* Space between items */
-    background-color: #004d40; /* Dark teal background */
-    border-radius: 25px; /* Rounded corners */
-    padding: 20px; /* Space inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--teal-dark);
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header logo image */
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-text {
+  color: var(--white);
+  text-align: center;
+}
+
 .header img {
-    height: 125px; /* Logo size */
+  height: 125px;
+  width: auto;
+  border-radius: 8px;
 }
 
-/* Main heading */
 h1 {
-    text-align: center; /* Center text */
-    color: #ffffff; /* White text */
-    font-size: 2.5em; /* Big font */
+  color: var(--white);
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation bar */
-nav {
-    background-color: #00695c; /* Dark green background */
-    display: flex; /* Use flex layout */
-    justify-content: center; /* Center links */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Wrap links on small screens */
-    border-radius: 25px; /* Rounded edges */
-    padding: 20px; /* Space inside */
-    width: fit-content; /* Fit content */
-    margin: 20px auto; /* Centered on page */
+.tagline {
+  font-style: italic;
+  color: var(--aqua-light);
+  margin-top: 0.5rem;
 }
 
-/* Nav links */
-nav a {
-    color: #ffffff; /* White text */
-    text-align: center; /* Center text */
-    padding: 14px 20px; /* Padding inside */
-    text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold text */
-    transition: all 0.2s ease-in-out; /* Smooth transition */
+/* ================ NAVIGATION ================ */
+.main-nav {
+  background-color: var(--teal-medium);
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 90%;
 }
 
-/* Nav link hover */
-nav a:hover {
-    background-color: #a7ffeb; /* Aqua background */
-    color: #000000; /* Black text */
-    border-radius: 10px; /* Rounded corners */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-/* Nav link focus (for keyboard users) */
-nav a:focus {
-    outline: 3px solid #ffd54f; /* Yellow outline */
-    outline-offset: 4px; /* Space around outline */
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-/* Subheadings */
-h2, h3 {
-    text-align: center; /* Centered text */
-    color: #004d40; /* Teal color */
+.nav-link:hover, 
+.nav-link:focus {
+  background-color: var(--aqua-light);
+  color: var(--gray-dark);
 }
 
-/* Main text blocks */
-.text, .treaty-text, #text {
-    font-size: 1.2rem; /* More flexible size */
-    text-align: left; /* Left aligned */
-    margin: 20px; /* Space around */
-    line-height: 1.6; /* Line spacing */
-    color: #1a1a1a; /* Dark text */
-    background-color: #f2f2f2; /* Light gray background */
-    padding: 15px; /* Padding inside */
-    border-radius: 10px; /* Rounded corners */
+.nav-link[aria-current="page"] {
+  background-color: var(--yellow-accent);
+  color: var(--gray-dark);
 }
 
-/* Images */
-#images, #image {
-    width: auto; /* Auto width */
-    max-width: 100%; /* Responsive size */
-    height: auto; /* Auto height */
-    display: block; /* Block display */
-    margin: 20px auto; /* Centered image */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+/* ================ MAIN CONTENT ================ */
+main {
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Footer section */
-footer {
-    text-align: center; /* Center text */
-    color: white; /* White text */
-    font-size: 1rem; /* Adjust font size */
-    border-radius: 25px; /* Rounded corners */
-    background-color: #5F4026; /* Dark brown background */
-    padding: 20px; /* Space inside */
-    height: auto; /* Auto height */
-    margin-top: 30px; /* Space above */
+.content-section {
+  margin-bottom: 2.5rem;
+  padding: 1rem;
 }
 
-/* Highlight text */
-.highlights {
-    background-color: #ffc107; /* Yellow background */
-    color: #000000; /* Black text */
-    padding: 10px; /* Space inside */
-    font-weight: bold; /* Bold text */
-    display: inline-block; /* Inline block */
-    border-radius: 10px; /* Rounded corners */
+h2 {
+  color: var(--teal-dark);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
-/* Info boxes */
-.treaty-info {
-    background-color: #d7ccc8; /* Light tan background */
-    color: #1a1a1a; /* Dark text */
-    padding: 10px 20px; /* Space inside */
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Margin around */
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--yellow-accent);
+  margin: 0.5rem auto;
 }
 
-/* Video container */
-.iframe-container {
-    display: flex; /* Flex layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin: 30px 0; /* Space top and bottom */
+h3 {
+  color: var(--teal-medium);
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
 }
 
-/* Video style */
-iframe {
-    max-width: 100%; /* Full width */
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+/* ================ TREATY HERO SECTION ================ */
+.treaty-hero {
+  background: linear-gradient(rgba(0, 77, 64, 0.8), rgba(0, 77, 64, 0.8)), 
+              url('images/treaty4-bg.jpg') center/cover;
+  color: var(--white);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 15px;
+  margin: 1.5rem 0;
 }
 
-/* Responsiveness for smaller screens */
+/* ================ TEXT CONTENT ================ */
+.text-content {
+  background-color: var(--gray-light);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  line-height: 1.7;
+}
+
+.source {
+  font-size: 0.8rem;
+  color: var(--teal-medium);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.source a {
+  color: var(--teal-dark);
+  text-decoration: none;
+}
+
+.source a:hover {
+  text-decoration: underline;
+}
+
+/* ================ IMAGES ================ */
+.image-container {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--teal-medium);
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: var(--teal-dark);
+  margin-top: 0.5rem;
+}
+
+figcaption a {
+  color: var(--teal-medium);
+  text-decoration: none;
+}
+
+/* ================ TIMELINE ================ */
+.timeline {
+  border-left: 3px solid var(--brown-dark);
+  padding-left: 2rem;
+  margin: 2rem;
+  position: relative;
+}
+
+.timeline-event {
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 1rem;
+  background-color: var(--gray-light);
+  border-radius: 8px;
+}
+
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: -2.4rem;
+  top: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--brown-dark);
+}
+
+/* ================ MAP SECTION ================ */
+.map-container {
+  margin: 2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-description {
+  background-color: var(--tan-light);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* ================ FIRST NATIONS SECTION ================ */
+.nation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nation-card {
+  background-color: var(--white);
+  border: 1px solid var(--aqua-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.nation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nation-card h3 {
+  color: var(--teal-dark);
+  margin-top: 0;
+  border-bottom: 2px solid var(--yellow-accent);
+  padding-bottom: 0.5rem;
+}
+
+/* ================ VIDEO SECTION ================ */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-description {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.video-description a {
+  color: var(--teal-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.video-description a:hover {
+  text-decoration: underline;
+}
+
+/* ================ HIGHLIGHTS ================ */
+.highlight {
+  background-color: var(--yellow-accent);
+  color: var(--gray-dark);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* ================ FOOTER ================ */
+.site-footer {
+  background-color: var(--brown-dark);
+  color: var(--white);
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 4px solid var(--yellow-accent);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  color: var(--aqua-light);
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: var(--white);
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: var(--yellow-accent);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+/* ================ ACCESSIBILITY ================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus {
+  outline: 3px solid var(--yellow-accent);
+  outline-offset: 3px;
+}
+
+/* ================ RESPONSIVE DESIGN ================ */
 @media (max-width: 768px) {
-    body {
-        font-size: 0.9rem;
-    }
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .header img {
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .timeline {
+    margin: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-event::before {
+    left: -1.9rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
 
-    .header {
-        flex-direction: column; /* Stack logo and title */
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column; /* Stack links vertically */
-        padding: 10px; /* Less padding */
-    }
-
-    #images, #image {
-        margin: 10px auto; /* Reduce margins */
-    }
-
-    .text, .treaty-text, #text {
-        padding: 10px; /* Reduced padding */
-    }
-
-    footer {
-        font-size: 0.8rem; /* Smaller font size */
-    }
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  .text-content {
+    padding: 1rem;
+  }
 }
