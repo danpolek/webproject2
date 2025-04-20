@@ -3,23 +3,25 @@ Name: Daniel Aduayi
 Course: Web Development 10S
 Teacher: Ms. Hoitink
 School: Pembina Trails Collegiate
-Date Last Modified: 16th
+Date Last Modified: (16th)
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic HTML setup with charset and viewport for responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 4 - Understanding Our Shared History</title>
-
-    <!-- External CSS file linked for styling -->
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Internal CSS for specific page elements */
+        .highlight {
+            color: #FF5733; /* Just an example of internal page-specific style */
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header section with logo and site title -->
     <header class="header" tabindex="0">
         <img
             id="logo"
@@ -30,7 +32,6 @@ Date Last Modified: 16th
         <h1>Treaty 4 - Understanding Our Shared History and Its Lasting Impact</h1>
     </header>
 
-    <!-- Navigation bar to move between website pages -->
     <nav role="navigation" aria-label="Main navigation" tabindex="0">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -38,9 +39,7 @@ Date Last Modified: 16th
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main page content begins -->
     <main role="main">
-        <!-- Treaty 4 Gathering history section -->
         <section aria-labelledby="gathering-title" tabindex="0">
             <h2 id="gathering-title"><i><b>TREATY 4 GATHERING</b></i></h2>
             <article>
@@ -50,19 +49,16 @@ Date Last Modified: 16th
                 </p>
                 <p>
                     The treaty was signed at
-                    <span style="color:grey; font-weight: bold;">Fort Qu'Appelle, Saskatchewan</span>,
+                    <span class="highlight">Fort Qu'Appelle, Saskatchewan</span>,
                     which remains an important historical site today.
                 </p>
                 <ul>
                     <li>
-                        <a href="https://fhqtc.com/t4gathering/" target="_blank" rel="noopener noreferrer">
-                            Treaty 4 Gathering source
-                        </a>
+                        <a href="https://fhqtc.com/t4gathering/" target="_blank">Treaty 4 Gathering source</a>
                     </li>
                 </ul>
             </article>
 
-            <!-- Image with caption -->
             <figure class="image-container" tabindex="0">
                 <img
                     id="images"
@@ -71,31 +67,28 @@ Date Last Modified: 16th
                 />
                 <figcaption>
                     Image source:
-                    <a href="https://www.reginathunder.ca/treaty4" target="_blank" rel="noopener noreferrer">Regina Thunder</a>
+                    <a href="https://www.reginathunder.ca/treaty4" target="_blank">Regina Thunder</a>
                 </figcaption>
             </figure>
 
             <p>
-                The flag has four sections that represent Treaty agreements and aspects of community and life. 
-                It shows the creation of the promise: 
+                The flag has four sections that represent Treaty agreements and aspects of community and life.
+                It shows the creation of the promise:
                 <strong>"For As Long As The Sun Shines, Grass Grows, and Waters Flow"</strong>, 
                 a phrase still used in land acknowledgments today.
             </p>
             <ul>
                 <li>
-                    <a href="https://fhqtc.com/t4gathering/" target="_blank" rel="noopener noreferrer">
-                        Treaty 4 Gathering source 2
-                    </a>
+                    <a href="https://fhqtc.com/t4gathering/" target="_blank">Treaty 4 Gathering source 2</a>
                 </li>
             </ul>
         </section>
 
-        <!-- Embedded interactive Google Map of Treaty 4 area -->
         <section aria-labelledby="map-title" tabindex="0">
             <h2 id="map-title">Map of Treaty 4 Reserve</h2>
             <div class="iframe-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.4667521232834!2d-104.05288832546985!3d50.44536929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x532a1a64a52ed6a9%3A0x39862b7fe30b267!2sFort%20Qu%27Appelle%2C%20SK!5e0!3m2!1sen!2sca!4v1672090704780!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?... (truncated)"
                     width="100%"
                     height="250"
                     style="border:0; display:block;"
@@ -108,15 +101,14 @@ Date Last Modified: 16th
             </div>
         </section>
 
-        <!-- Explaining the coverage area of Treaty 4 -->
         <section aria-labelledby="location-title" tabindex="0">
             <h2 id="location-title">Treaty 4 Location and Coverage</h2>
             <p>
-                Treaty 4 covers a large area of <strong>south Saskatchewan</strong>, extending into 
-                <strong>west Manitoba</strong> and a small part of <strong>Alberta</strong>. It includes over 
+                Treaty 4 covers a large area of <strong>south Saskatchewan</strong>, extending into
+                <strong>west Manitoba</strong> and a small part of <strong>Alberta</strong>. It includes over
                 <strong>195,000 square kilometers</strong> of land.
             </p>
-            <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-4" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-4" target="_blank">
                 The Canadian Encyclopedia - Treaty 4
             </a>
 
@@ -127,25 +119,23 @@ Date Last Modified: 16th
                 <li>A small section of <strong>Alberta</strong></li>
             </ul>
 
-            <!-- Map image showing Treaty 4 coverage -->
             <figure class="image-container" tabindex="0">
                 <img
                     id="treaty4-map"
-                    src="https://e2vapt3x8ya.exactdn.com/wp-content/uploads/2015/06/image-0001-1.jpg?strip=all&lossy=1&w=2560&ssl=1"
+                    src="https://www.sac-isc.gc.ca/...jpg"
                     alt="Map of Treaty 4 region showing provinces and communities covered by the agreement"
                 />
                 <figcaption>
                     Image source:
-                    <a href="https://scoinc.mb.ca/treaties/" target="_blank" rel="noopener noreferrer">SCO Treaty Page</a>
+                    <a href="https://scoinc.mb.ca/treaties/" target="_blank">SCO Treaty Page</a>
                 </figcaption>
             </figure>
         </section>
 
-        <!-- First Nations communities included in Treaty 4 -->
         <section aria-labelledby="firstnations-title" tabindex="0">
             <h3 id="firstnations-title">First Nations in Treaty 4 Territory</h3>
             <p>
-                Treaty 4 includes <strong>35 First Nations</strong> from the Cree, Saulteaux (Ojibwe), and Assiniboine peoples. 
+                Treaty 4 includes <strong>35 First Nations</strong> from the Cree, Saulteaux (Ojibwe), and Assiniboine peoples.
                 Some of these nations include:
             </p>
             <ul>
@@ -157,18 +147,16 @@ Date Last Modified: 16th
             </ul>
         </section>
 
-        <!-- Explanation of why Treaty 4 land matters -->
         <section class="treaty-info" aria-labelledby="location-importance-title" tabindex="0">
             <h2 id="location-importance-title">Why is the Location Important?</h2>
             <p class="highlights">Treaty 4 covers a large area of southern Saskatchewan.</p>
             <p>
-                The land in Treaty 4 was originally home to Indigenous people who lived off the land, 
-                relying on the natural area for food, shelter, and trade. The signing of the treaty changed 
-                how land was used and led to the creation of reserves. 
+                The land in Treaty 4 was originally home to Indigenous people who lived off the land,
+                relying on the natural area for food, shelter, and trade. The signing of the treaty changed
+                how land was used and led to the creation of reserves.
             </p>
         </section>
 
-        <!-- Embedded YouTube video resource for student learning -->
         <section aria-labelledby="video-title" tabindex="0">
             <h2 id="video-title">Treaty 4 Video Resource</h2>
             <div class="iframe-container">
@@ -184,29 +172,28 @@ Date Last Modified: 16th
                 ></iframe>
             </div>
             <p>
-                <a href="https://www.youtube.com/embed/uy_1I5F2w8s?si=gTWSAvsAvqNkNGUW" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/embed/uy_1I5F2w8s?si=gTWSAvsAvqNkNGUW" target="_blank">
                     Link for the YouTube video above
                 </a>
             </p>
         </section>
 
-        <!-- Section on the continuing impact of Treaty 4 -->
         <section aria-labelledby="impact-title" tabindex="0">
             <h3 id="impact-title">How Treaty 4 Affects People Today</h3>
             <p class="treaty-text">
-                Treaty 4 continues to play a major role in Indigenous and non-Indigenous relations in Canada. 
-                It set the base for Indigenous rights, government, and land negotiations. 
+                Treaty 4 continues to play a major role in Indigenous and non-Indigenous relations in Canada.
+                It set the base for Indigenous rights, government, and land negotiations.
                 Many schools and communities honor Treaty 4 through land acknowledgments, cultural celebrations, and educational work.
             </p>
         </section>
     </main>
 
-    <!-- Footer with credit and copyright -->
     <footer role="contentinfo" tabindex="0">
         <p>All rights reserved 2025 | Treaty 4 | By Daniel Aduayi</p>
     </footer>
 </body>
 </html>
+
 
 
 
