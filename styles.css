@@ -23,196 +23,206 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Set body font and layout */
 body {
-    font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
-    background-color: #ffffff; /* White background */
-    color: #1a1a1a; /* Dark text */
-    margin: 0; /* No margin */
-    padding: 0; /* No padding */
-    line-height: 1.6; /* Space between lines */
-    font-size: 1rem; /* Flexible font size */
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 /* Header section */
 .header {
-    display: flex; /* Use flex layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    gap: 10px; /* Space between items */
-    background-color: #004d40; /* Dark teal background */
-    border-radius: 25px; /* Rounded corners */
-    padding: 20px; /* Space inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #004d40;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 /* Header logo image */
 .header img {
-    height: 125px; /* Logo size */
+    height: 125px;
 }
 
 /* Main heading */
 h1 {
-    text-align: center; /* Center text */
-    color: #ffffff; /* White text */
-    font-size: 2.5em; /* Big font */
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
 }
 
 /* Navigation bar */
 nav {
-    background-color: #00695c; /* Dark green background */
-    display: flex; /* Use flex layout */
-    justify-content: center; /* Center links */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Wrap links on small screens */
-    border-radius: 25px; /* Rounded edges */
-    padding: 20px; /* Space inside */
-    width: fit-content; /* Fit content */
-    margin: 20px auto; /* Centered on page */
+    background-color: #00695c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 /* Nav links */
 nav a {
-    color: #ffffff; /* White text */
-    text-align: center; /* Center text */
-    padding: 14px 20px; /* Padding inside */
-    text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold text */
-    transition: all 0.2s ease-in-out; /* Smooth transition */
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Nav link hover */
 nav a:hover {
-    background-color: #a7ffeb; /* Aqua background */
-    color: #000000; /* Black text */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #a7ffeb;
+    color: #000000;
+    border-radius: 10px;
+    transform: scale(1.05);
 }
 
-/* Nav link focus (for keyboard users) */
-nav a:focus {
-    outline: 3px solid #ffd54f; /* Yellow outline */
-    outline-offset: 4px; /* Space around outline */
+/* Nav link focus for keyboard users */
+nav a:focus,
+nav a:focus-visible {
+    outline: 3px solid #ffd54f;
+    outline-offset: 4px;
 }
 
 /* Logo default size */
 #logo {
-    transform: scale(1); /* Normal size */
-    transition: transform 0.3s ease-in-out; /* Smooth scale */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Logo on hover */
 #logo:hover {
-    transform: scale(1.1); /* Grow slightly */
+    transform: scale(1.1);
 }
 
 /* Subheadings */
 h2, h3 {
-    text-align: center; /* Centered text */
-    color: #004d40; /* Teal color */
+    text-align: center;
+    color: #004d40;
 }
 
 /* Main text blocks */
 .text, .treaty-text, #text {
-    font-size: 1.2rem; /* More flexible size */
-    text-align: left; /* Left aligned */
-    margin: 20px; /* Space around */
-    line-height: 1.6; /* Line spacing */
-    color: #1a1a1a; /* Dark text */
-    background-color: #f2f2f2; /* Light gray background */
-    padding: 15px; /* Padding inside */
-    border-radius: 10px; /* Rounded corners */
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Images */
 #images, #image {
-    width: auto; /* Auto width */
-    max-width: 100%; /* Responsive size */
-    height: auto; /* Auto height */
-    display: block; /* Block display */
-    margin: 20px auto; /* Centered image */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer section */
 footer {
-    text-align: center; /* Center text */
-    color: white; /* White text */
-    font-size: 1rem; /* Adjust font size */
-    border-radius: 25px; /* Rounded corners */
-    background-color: #5F4026; /* Dark brown background */
-    padding: 20px; /* Space inside */
-    height: auto; /* Auto height */
-    margin-top: 30px; /* Space above */
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    background-color: #5F4026;
+    padding: 20px;
+    height: auto;
+    margin-top: 30px;
 }
 
 /* Highlight text */
 .highlights {
-    background-color: #ffc107; /* Yellow background */
-    color: #000000; /* Black text */
-    padding: 10px; /* Space inside */
-    font-weight: bold; /* Bold text */
-    display: inline-block; /* Inline block */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #ffc107;
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px dashed #004d40;
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
 }
 
 /* Info boxes */
 .treaty-info {
-    background-color: #d7ccc8; /* Light tan background */
-    color: #1a1a1a; /* Dark text */
-    padding: 10px 20px; /* Space inside */
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Margin around */
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background-color: #d7ccc8;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Video container */
 .iframe-container {
-    display: flex; /* Flex layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin: 30px 0; /* Space top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
 }
 
 /* Video style */
 iframe {
-    max-width: 100%; /* Full width */
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
-    /* Body font size adjustment */
     body {
         font-size: 0.9rem;
     }
 
-    /* Header layout adjustment */
     .header {
-        flex-direction: column; /* Stack logo and title */
+        flex-direction: column;
         text-align: center;
     }
 
-    /* Navigation adjustment */
     nav {
-        flex-direction: column; /* Stack links vertically */
-        padding: 10px; /* Less padding */
+        flex-direction: column;
+        padding: 10px;
     }
 
-    /* Image responsiveness */
     #images, #image {
-        margin: 10px auto; /* Reduce margins */
+        margin: 10px auto;
     }
 
-    /* Text block padding adjustments */
     .text, .treaty-text, #text {
-        padding: 10px; /* Reduced padding for smaller screens */
+        padding: 10px;
     }
 
-    /* Footer text size */
     footer {
-        font-size: 0.8rem; /* Smaller font size */
+        font-size: 0.8rem;
     }
 }
