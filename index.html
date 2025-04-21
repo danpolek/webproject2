@@ -13,7 +13,27 @@ Date Last Modified: (16th)
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 4 - Understanding Our Shared History</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <script>// Get the button
+        let mybutton = document.getElementById("backToTopBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        </script>
     <style>
+
         /* Internal CSS for specific page elements */
         .highlight {
             color: #FF5733; /* Highlight important text with a distinct color */
@@ -54,6 +74,25 @@ Date Last Modified: (16th)
 .map-frame, iframe {
     display: block; /* Prevents inline-block behavior */
     margin: 0 auto; /* Ensures iframe is centered */
+}
+
+/* Style for the Back to Top Button */
+#backToTopBtn {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Some padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: none; /* Hidden by default */
+}
+
+#backToTopBtn:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
     </style>
@@ -278,5 +317,8 @@ Date Last Modified: (16th)
     <footer role="contentinfo" tabindex="0">
         <p>All rights reserved 2025 | Treaty 4 | By Daniel Aduayi</p>
     </footer>
+    
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+
 </body>
 </html>

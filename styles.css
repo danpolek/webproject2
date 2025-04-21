@@ -29,6 +29,7 @@
     --teal-light: #a7ffeb;
     --yellow: #ffc107;
     --yellow-focus: #ffd54f;
+    --accent: var(--yellow);
     --brown: #5F4026;
     --neutral-white: #ffffff;
     --neutral-dark: #1a1a1a;
@@ -147,25 +148,7 @@ h2, h3 {
     border-radius: 10px; /* Rounded corners */
 }
 
-/* Container for embedded iframes (e.g. maps/videos) */
-.iframe-container {
-    position: relative; /* For absolute positioning inside */
-    width: 100%; /* Full width */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0; /* Keeps height 0 for aspect ratio trick */
-    overflow: hidden; /* Hides overflow */
-    margin-top: 1rem; /* Space above */
-}
 
-/* Makes embedded iframe fill the container */
-.iframe-container iframe {
-    position: absolute; /* Positions inside container */
-    top: 0; /* Sticks to top */
-    left: 0; /* Sticks to left */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    border: 0; /* No border */
-}
 
 /* Styles for images */
 #images, #image {
@@ -219,8 +202,8 @@ footer {
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-/* Centering container for iframes */
 
+/* Container for embedded iframes (e.g. maps/videos) */
 .iframe-container {
     position: relative;
     width: 100%;
