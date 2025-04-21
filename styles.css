@@ -36,6 +36,7 @@ body {
     padding: 0; /* Removes default padding */
     line-height: 1.6; /* Space between lines */
     font-size: 1rem; /* Sets default font size */
+    letter-spacing: 1px;
 }
 
 /* Styles header container */
@@ -220,7 +221,8 @@ iframe {
     box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Light shadow */
 }
 
-/* ============ MEDIA QUERIES (Responsive for smaller screens) ============ */
+/*  for smaller screens cuz why not
+) ============ */
 @media (max-width: 768px) {
     body {
         font-size: 0.9rem; /* Smaller font size */
