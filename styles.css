@@ -134,6 +134,24 @@ h2, h3 {
     padding: 15px;
     border-radius: 10px;
 }
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+    height: 0; /* Helps maintain aspect ratio with padding */
+    overflow: hidden; /* Hides anything that spills out */
+    margin-top: 1rem;
+}
+
+/* Makes the embedded iframe stretch and fill the container */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Removes default iframe border */
+}
 
 /* Images */
 #images, #image {
