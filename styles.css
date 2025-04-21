@@ -19,234 +19,235 @@
     I chose the Sygma Grindset Colour Palette because it matches the Treaty 4 theme perfectly 
     and is suitable for educational websites aimed at Grades 4–8.
 */
-
-/* Import Google Font */
+/* Importing Google Font 'Quicksand' */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
-/* Smooth scroll for anchor links */
+/* Enables smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
 }
 
-/* Set body font and layout */
+/* Sets font, background, color, spacing, and line height for body */
 body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #ffffff;
-    color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif; /* Uses imported Quicksand font */
+    background-color: #ffffff; /* White background */
+    color: #1a1a1a; /* Dark gray text */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    line-height: 1.6; /* Space between lines */
+    font-size: 1rem; /* Sets default font size */
 }
 
-/* Header section */
+/* Styles header container */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: #004d40;
-    border-radius: 25px;
-    padding: 20px;
+    display: flex; /* Uses flexbox */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    gap: 10px; /* Space between logo and title */
+    background-color: #004d40; /* Dark teal background */
+    border-radius: 25px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
 }
 
-/* Header logo image */
+/* Sets height of header logo image */
 .header img {
-    height: 125px;
+    height: 125px; /* Makes logo 125px tall */
 }
 
-/* Main heading */
+/* Styles main heading (h1) */
 h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2.5em;
+    text-align: center; /* Centers the text */
+    color: #ffffff; /* White text */
+    font-size: 2.5em; /* Increases text size */
 }
 
-/* Navigation bar */
+/* Styles the navigation bar */
 nav {
-    background-color: #00695c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 25px;
-    padding: 20px;
-    width: fit-content;
-    margin: 20px auto;
-}
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #00695c; /* Medium teal background */
+    display: flex; /* Uses flexbox */
+    justify-content: center; /* Centers links */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Wraps links to next line if needed */
+    border-radius: 25px; /* Rounded corners */
+    padding: 20px; /* Space inside nav bar */
+    width: fit-content; /* Shrinks nav to fit content */
+    margin: 20px auto; /* Centers nav with space above/below */
+    position: sticky; /* Makes nav stick when scrolling */
+    top: 0; /* Sticks to top of screen */
+    z-index: 1000; /* Keeps nav on top of other elements */
 }
 
-
-/* Nav links */
+/* Styles nav links */
 nav a {
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    color: #ffffff; /* White text */
+    text-align: center; /* Centers text inside links */
+    padding: 14px 20px; /* Padding inside each link */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes text bold */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
 }
 
-/* Nav link hover */
+/* Styles nav links when hovered */
 nav a:hover {
-    background-color: #a7ffeb;
-    color: #000000;
-    border-radius: 10px;
-    transform: scale(1.05);
+    background-color: #a7ffeb; /* Light teal background */
+    color: #000000; /* Changes text to black */
+    border-radius: 10px; /* Rounds corners on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
-/* Nav link focus for keyboard users */
+/* Styles nav links when focused (keyboard navigation) */
 nav a:focus,
 nav a:focus-visible {
-    outline: 3px solid #ffd54f;
-    outline-offset: 4px;
+    outline: 3px solid #ffd54f; /* Yellow outline */
+    outline-offset: 4px; /* Space between outline and text */
 }
 
-/* Logo default size */
+/* Default logo size */
 #logo {
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1); /* Normal size */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
 }
 
-/* Logo on hover */
+/* Logo hover effect */
 #logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Enlarges slightly when hovered */
 }
 
-/* Subheadings */
+/* Styles h2 and h3 headings */
 h2, h3 {
-    text-align: center;
-    color: #004d40;
+    text-align: center; /* Centers text */
+    color: #004d40; /* Dark teal color */
 }
 
-/* Main text blocks */
+/* Styles text blocks */
 .text, .treaty-text, #text {
-    font-size: 1.2rem;
-    text-align: left;
-    margin: 20px;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background-color: #f2f2f2;
-    padding: 15px;
-    border-radius: 10px;
-}
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
-    height: 0; /* Helps maintain aspect ratio with padding */
-    overflow: hidden; /* Hides anything that spills out */
-    margin-top: 1rem;
+    font-size: 1.2rem; /* Increases font size */
+    text-align: left; /* Aligns text left */
+    margin: 20px; /* Adds margin around */
+    line-height: 1.6; /* Spacing between lines */
+    color: #1a1a1a; /* Dark gray text */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 15px; /* Space inside the box */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Makes the embedded iframe stretch and fill the container */
+/* Container for embedded iframes (e.g. maps/videos) */
+.iframe-container {
+    position: relative; /* For absolute positioning inside */
+    width: 100%; /* Full width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0; /* Keeps height 0 for aspect ratio trick */
+    overflow: hidden; /* Hides overflow */
+    margin-top: 1rem; /* Space above */
+}
+
+/* Makes embedded iframe fill the container */
 .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; /* Removes default iframe border */
+    position: absolute; /* Positions inside container */
+    top: 0; /* Sticks to top */
+    left: 0; /* Sticks to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 0; /* No border */
 }
 
-/* Images */
+/* Styles for images */
 #images, #image {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    width: auto; /* Auto width */
+    max-width: 100%; /* Doesn’t exceed container */
+    height: auto; /* Keeps image ratio */
+    display: block; /* Makes image a block element */
+    margin: 20px auto; /* Centered with margin */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
 }
 
-/* Footer section */
+/* Styles footer section */
 footer {
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    border-radius: 25px;
-    background-color: #5F4026;
-    padding: 20px;
-    height: auto;
-    margin-top: 30px;
+    text-align: center; /* Centers text */
+    color: white; /* White text */
+    font-size: 1rem; /* Normal font size */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #5F4026; /* Dark brown background */
+    padding: 20px; /* Space inside footer */
+    height: auto; /* Auto height */
+    margin-top: 30px; /* Space above */
 }
 
-/* Highlight text */
+/* Highlighted text boxes */
 .highlights {
-    background-color: #ffc107;
-    color: #000000;
-    padding: 10px;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 10px;
-    border: 2px dashed #004d40;
-    animation: pulse 1.5s infinite;
+    background-color: #ffc107; /* Yellow background */
+    color: #000000; /* Black text */
+    padding: 10px; /* Space inside */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Treated like a block */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px dashed #004d40; /* Dashed teal border */
+    animation: pulse 1.5s infinite; /* Repeats pulse animation */
 }
 
-/* Pulse animation */
+/* Keyframe for pulsing animation */
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.03); }
-    100% { transform: scale(1); }
+    0% { transform: scale(1); } /* Normal */
+    50% { transform: scale(1.03); } /* Slightly bigger */
+    100% { transform: scale(1); } /* Back to normal */
 }
 
-/* Info boxes */
+/* Info boxes about Treaty details */
 .treaty-info {
-    background-color: #d7ccc8;
-    color: #1a1a1a;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d7ccc8; /* Soft brown background */
+    color: #1a1a1a; /* Dark text */
+    padding: 10px 20px; /* Padding inside box */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Margin around */
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-/* Video container */
+/* Centering container for iframes */
 .iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
+    display: flex; /* Uses flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 30px 0; /* Margin above and below */
 }
 
-/* Video style */
+/* Styles iframe video elements */
 iframe {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Doesn’t go beyond container */
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Light shadow */
 }
 
-/* Responsiveness for smaller screens */
+/* ============ MEDIA QUERIES (Responsive for smaller screens) ============ */
 @media (max-width: 768px) {
     body {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Smaller font size */
     }
 
     .header {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
     }
 
     nav {
-        flex-direction: column;
-        padding: 10px;
+        flex-direction: column; /* Stack nav links */
+        padding: 10px; /* Less padding */
     }
 
     #images, #image {
-        margin: 10px auto;
+        margin: 10px auto; /* Less margin */
     }
 
     .text, .treaty-text, #text {
-        padding: 10px;
+        padding: 10px; /* Less padding */
     }
 
     footer {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Smaller text */
     }
 }
+
+
+
