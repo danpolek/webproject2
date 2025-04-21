@@ -23,31 +23,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
 /* Enables smooth scrolling for anchor links */
+:root {
+    --teal-dark: #004d40;
+    --teal-mid: #00695c;
+    --teal-light: #a7ffeb;
+    --yellow: #ffc107;
+    --yellow-focus: #ffd54f;
+    --brown: #5F4026;
+    --neutral-white: #ffffff;
+    --neutral-dark: #1a1a1a;
+    --neutral-gray: #f2f2f2;
+    --neutral-soft: #d7ccc8;
+}
 html {
     scroll-behavior: smooth;
 }
 
 /* Sets font, background, color, spacing, and line height for body */
-body {
-    font-family: 'Quicksand', sans-serif; /* Uses imported Quicksand font */
-    background-color: #ffffff; /* White background */
-    color: #1a1a1a; /* Dark gray text */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    line-height: 1.6; /* Space between lines */
-    font-size: 1rem; /* Sets default font size */
-    letter-spacing: 1px;
-}
+
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: var(--neutral-white); /* Using the white color variable */
+        color: var(--neutral-dark); /* Using the dark text color variable */
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
 
 /* Styles header container */
 .header {
-    display: flex; /* Uses flexbox */
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Centers items horizontally */
-    gap: 10px; /* Space between logo and title */
-    background-color: #004d40; /* Dark teal background */
-    border-radius: 25px; /* Rounded corners */
-    padding: 20px; /* Space inside the box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--teal-dark); /* Using the dark teal color variable */
+    border-radius: 25px;
+    padding: 20px;
 }
 
 /* Sets height of header logo image */
@@ -90,11 +104,12 @@ nav a {
 
 /* Styles nav links when hovered */
 nav a:hover {
-    background-color: #a7ffeb; /* Light teal background */
-    color: #000000; /* Changes text to black */
-    border-radius: 10px; /* Rounds corners on hover */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    background-color: var(--accent); /* Using the accent color variable */
+    color: var(--neutral-dark); /* Using the dark text color variable */
+    border-radius: 10px;
+    transform: scale(1.05);
 }
+
 
 /* Styles nav links when focused (keyboard navigation) */
 nav a:focus,
@@ -126,8 +141,8 @@ h2, h3 {
     text-align: left; /* Aligns text left */
     margin: 20px; /* Adds margin around */
     line-height: 1.6; /* Spacing between lines */
-    color: #1a1a1a; /* Dark gray text */
-    background-color: #f2f2f2; /* Light gray background */
+        background-color: var(--neutral-light); /* Using the light neutral color variable */
+        color: var(--neutral-dark); /* Dark text color for better readability */
     padding: 15px; /* Space inside the box */
     border-radius: 10px; /* Rounded corners */
 }
@@ -205,21 +220,20 @@ footer {
 }
 
 /* Centering container for iframes */
+
 .iframe-container {
-    display: flex; /* Uses flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    margin: 30px 0; /* Margin above and below */
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Styles iframe video elements */
-iframe {
-    max-width: 100%; /* Doesn’t go beyond container */
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2); /* Light shadow */
-}
+
 
 /*  for smaller screens cuz why not
 ) ============ */
